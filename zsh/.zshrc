@@ -1,6 +1,2 @@
-#Setup for prompt
-PROMPT=$'%n@%m %~\n%# '
-
-
-#Aliases
-alias ls='ls -A --color=auto'
+#load all config files with .zsh extension in /dotfiles/zsh/.zsh directory
+for config (~/dotfiles/zsh/.zsh/*.zsh) source $config
