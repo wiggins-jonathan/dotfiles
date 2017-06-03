@@ -36,8 +36,8 @@ URxvt.cursorBlink:	true
  *color11:      	#BBCC9A
 
 ! Blue
- *color4:       	#CC7AB1
- *color12:      	#CC8FCC
+ *color4:       	#27ADA8
+ *color12:      	#63DDF0
 
 ! Magenta
  *color5:       	#E673AC
