@@ -16,7 +16,7 @@ URxvt.cursorBlink:	true
 !Terminal colors	
  *foreground: 		#ffffff
  *background: 		#242424
- *cursorColor:  	#0000004
+ *cursorColor:  	#CC52A3
  *colorUL:      	#C5CCA3
 
 ! Black
