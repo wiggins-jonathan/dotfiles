@@ -1,46 +1,53 @@
-!Font config  here
+!Font settings
+URxvt.font:		xft:Inconsolata:size=11
+URxvt.boldFont:		xft:Inconsolata:size=11
+URxvt.letterSpace:	-1
+URxvt.lineSpace:	0
+xft.antialias:		1
+xft.hinting:		1
+xft.hintstyle: 		1
+xft.rgba:		rgb
+xft.lcdfilter:		lcddefault
 
-
-
-!urxvt config here
+!urxvt interface settings
 URxvt.scrollBar:	false
 URxvt.cursorBlink:	true
 
 !Terminal colors	
- *foreground: 	#ffffff
- *background: 	#242424
- *cursorColor:  #0000004
- *colorUL:      #C5CCA3
+ *foreground: 		#ffffff
+ *background: 		#242424
+ *cursorColor:  	#0000004
+ *colorUL:      	#C5CCA3
 
 ! Black
- *color0:       #4C4C4C
- *color8:       #333333
+ *color0:       	#4C4C4C
+ *color8:       	#333333
 
 ! Red
- *color1:       #E65C73
- *color9:       #FF6680
+ *color1:       	#E65C73
+ *color9:       	#FF6680
 
 ! Green
- *color2:       #C5CCA3
- *color10:      #C7E6B8
+ *color2:       	#C5CCA3
+ *color10:      	#C7E6B8
 
 ! Yellow
- *color3:       #B8CCA3
- *color11:      #BBCC9A
+ *color3:       	#B8CCA3
+ *color11:      	#BBCC9A
 
 ! Blue
- *color4:       #CC7AB1
- *color12:      #CC8FCC
+ *color4:       	#CC7AB1
+ *color12:      	#CC8FCC
 
 ! Magenta
- *color5:       #E673AC
- *color13:      #CC52A3
+ *color5:       	#E673AC
+ *color13:      	#CC52A3
 
 ! Cyan
- *color6:       #CCA3B1
- *color14:      #CC8FA3
+ *color6:       	#CCA3B1
+ *color14:      	#CC8FA3
 
 ! White
- *color7:       #F2C2CA
- *color15:      #F2E6E8
+ *color7:       	#F2C2CA
+ *color15:      	#F2E6E8
 
