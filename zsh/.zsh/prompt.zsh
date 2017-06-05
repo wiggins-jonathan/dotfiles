@@ -5,4 +5,4 @@ pwd=%~
 newline=$'\n'
 prompt=%#
 
-PROMPT="┌──${username}@${hostname} ${pwd}${newline}└─${prompt} "
+PROMPT="┌──[${username}@${hostname}] [${pwd}]${newline}└─${prompt} "
