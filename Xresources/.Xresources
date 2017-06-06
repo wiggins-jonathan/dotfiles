@@ -1,7 +1,8 @@
 ! ~/.Xresources
 
-! Link variables for [Colors]
+! Link variables for [Colors] & rofi
 #include ".xres/colors.x"
+#include ".xres/rofi.x"
 
 ! [Font settings]
 URxvt.font:		xft:Inconsolata:size=11
@@ -14,7 +15,7 @@ xft.hintstyle: 		1
 xft.rgba:		rgb
 xft.lcdfilter:		lcddefault
 
-! [urxvt interface settings]
+! [URxvt interface]
 URxvt.scrollBar:	false
 URxvt.cursorBlink:	true
 
