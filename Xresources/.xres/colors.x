@@ -1,10 +1,10 @@
 ! colors.x
 ! File for defining colors in config files. 
-! Linked to in ~/.Xresources
+! Linked to in ~/.Xresources, ~/.xres/rofi.x
 
 ! Color variables
-#define _foreground     #ffffff
-#define _background     #242424
+#define fg		#ffffff
+#define bg		#242424
 #define _cursorColor    #CC52A3
 #define _colorUL        #03A9F4
 ! Black

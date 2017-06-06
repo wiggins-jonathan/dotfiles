@@ -20,8 +20,8 @@ URxvt.scrollBar:	false
 URxvt.cursorBlink:	true
 
 ! [Colors]
-*foreground: 		_foreground
-*background: 		_background
+*foreground: 		fg
+*background: 		bg
 *cursorColor:	  	_cursorColor
 *colorUL:    	  	_colorUL
 
