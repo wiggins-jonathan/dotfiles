@@ -1,4 +1,6 @@
-!Font settings
+! ~/.Xresources
+
+! Font settings
 URxvt.font:		xft:Inconsolata:size=11
 URxvt.boldFont:		xft:Inconsolata:size=11
 URxvt.letterSpace:	-1
@@ -9,45 +11,75 @@ xft.hintstyle: 		1
 xft.rgba:		rgb
 xft.lcdfilter:		lcddefault
 
-!urxvt interface settings
+! urxvt interface settings
 URxvt.scrollBar:	false
 URxvt.cursorBlink:	true
 
-!Terminal colors	
- *foreground: 		#ffffff
- *background: 		#242424
- *cursorColor:  	#CC52A3
- *colorUL:      	#03A9F4
+! Color variables
+#define _foreground	#ffffff
+#define _background	#242424
+#define _cursorColor	#CC52A3
+#define _colorUL	#03A9F4
+! Black
+#define black0		#4C4C4C
+#define black8		#333333
+! Red
+#define red1		#E65C73
+#define red9		#FF6680
+! Green
+#define green2		#C5CCA3
+#define green10		#C7E6B8
+! Yellow
+#define yellow3		#B8CCA3
+#define yellow11	#BBCC9A
+! Blue
+#define blue4		#27ADA8
+#define blue12		#03A9F4
+! Magenta
+#define magenta5	#E673AC
+#define magenta13	#CC52A3
+! Cyan
+#define cyan6		#CCA3B1
+#define cyan14		#CC8FA3
+! White
+#define white7		#F2C2CA
+#define white15		#F2E6E8
+
+! Terminal colors	
+*foreground: 		_foreground
+*background: 		_background
+*cursorColor:	  	_cursorColor
+*colorUL:    	  	_colorUL
 
 ! Black
- *color0:       	#4C4C4C
- *color8:       	#333333
+*color0:	       	black0
+*color8:	       	black8
 
 ! Red
- *color1:       	#E65C73
- *color9:       	#FF6680
+*color1:       		red1
+*color9:       		red9
 
 ! Green
- *color2:       	#C5CCA3
- *color10:      	#C7E6B8
+*color2:       		green2
+*color10:      		green10
 
 ! Yellow
- *color3:       	#B8CCA3
- *color11:      	#BBCC9A
+*color3:       		yellow3
+*color11:      		yellow11
 
 ! Blue
- *color4:       	#27ADA8
- *color12:      	#03A9F4
+*color4:       		blue4
+*color12:      		blue12
 
 ! Magenta
- *color5:       	#E673AC
- *color13:      	#CC52A3
+*color5:       		magenta5
+*color13:      		magenta13
 
 ! Cyan
- *color6:       	#CCA3B1
- *color14:      	#CC8FA3
+*color6:       		cyan6
+*color14:      		cyan14
 
 ! White
- *color7:       	#F2C2CA
- *color15:      	#F2E6E8
+*color7:	       	white7
+*color15:	      	white15
 
