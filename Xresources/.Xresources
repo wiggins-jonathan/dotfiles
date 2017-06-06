@@ -6,7 +6,7 @@
 
 ! [Font settings]
 URxvt.font:		xft:Inconsolata:size=11
-URxvt.boldFont:		xft:Inconsolata:size=11
+URxvt.boldFont:		xft:Inconsolata:style=Bold:size=11
 URxvt.letterSpace:	-1
 URxvt.lineSpace:	0
 xft.antialias:		1
@@ -24,6 +24,7 @@ URxvt.cursorBlink:	true
 *background: 		bg
 *cursorColor:	  	_cursorColor
 *colorUL:    	  	_colorUL
+*highlightColor:	white15
 
 ! Black
 *color0:	       	black0
