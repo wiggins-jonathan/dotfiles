@@ -1,0 +1,6 @@
+# mpd
+mpd/.config/playlists
+mpd/.config/database
+
+# ncmpcpp
+ncmpcpp/.config/error.log

@@ -8,3 +8,5 @@ Repository for linux configuration files. Use git & GNU stow to deploy.
 * rofi
 * polybar
 * neofetch
+* mpd
+* ncmpcpp
