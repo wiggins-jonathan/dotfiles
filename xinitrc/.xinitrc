@@ -54,5 +54,8 @@ xrandr --output VGA-1 --mode 1920x1080
 # Set numlock key on 
 numlockx &
 
+# Set background with feh script
+~/.fehbg &
+
 # Execute i3-wm
 exec i3
