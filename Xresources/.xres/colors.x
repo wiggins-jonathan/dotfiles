@@ -5,29 +5,37 @@
 ! Color variables
 #define fg		#ffffff
 #define bg		#242424
-#define _cursorColor    #CC52A3
+#define _cursorColor    #FF4AAB
 #define _colorUL        #03A9F4
+
 ! Black
 #define black0          #4C4C4C
 #define black8          #333333
+
 ! Red
 #define red1            #E65C73
-#define red9            #FF6680
+#define red9            #BE0E50
+
 ! Green
-#define green2          #C5CCA3
-#define green10         #C7E6B8
+#define green2          #ABFF4A
+#define green10         #50FF4A
+
 ! Yellow
 #define yellow3         #B8CCA3
 #define yellow11        #BBCC9A
+
 ! Blue
 #define blue4           #27ADA8
 #define blue12          #03A9F4
+
 ! Magenta
-#define magenta5        #E673AC
-#define magenta13       #CC52A3
+#define magenta5        #CC52A3
+#define magenta13       #FF4AAB
+
 ! Cyan
 #define cyan6           #CCA3B1
 #define cyan14          #CC8FA3
+
 ! White
 #define white7          #F2C2CA
 #define white15         #F2E6E8
