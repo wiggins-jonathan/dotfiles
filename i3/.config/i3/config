@@ -141,9 +141,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Set gaps, used in i3-gaps only 
+smart_gaps on
 smart_borders on
-gaps inner 8
-gaps outer 12
+gaps inner 4
+gaps outer 6
 
 # Remove windows borders
 new_window 1pixel
