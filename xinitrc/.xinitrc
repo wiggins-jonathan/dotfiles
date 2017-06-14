@@ -9,12 +9,6 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 if [ -f $sysresources ]; then
 
-
-
-
-
-
-
     xrdb -merge $sysresources
 
 fi
@@ -25,12 +19,6 @@ fi
 
 if [ -f "$userresources" ]; then
 
-
-
-
-
-
-
     xrdb -merge "$userresources"
 
 fi
@@ -38,8 +26,6 @@ fi
 if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
-
-# start some nice programs
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
@@ -54,8 +40,11 @@ xrandr --output VGA-1 --mode 1920x1080
 # Set numlock key on 
 numlockx &
 
-# Set background with feh script
-~/.fehbg &
+# Uncomment to set background with feh script
+# ~/.fehbg &
+
+# Set gif as background
+gifview -a -w root ~/wallpaper/rolly_rocket_resized.gif &
 
 # Execute i3-wm
 exec i3
