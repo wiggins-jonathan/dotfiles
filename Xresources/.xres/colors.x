@@ -21,8 +21,8 @@
 #define green10         #50FF4A
 
 ! Yellow
-#define yellow3         #B8CCA3
-#define yellow11        #BBCC9A
+#define yellow3         #CCA3B1
+#define yellow11        #CC5FA3
 
 ! Blue
 #define blue4           #27ADA8
@@ -33,8 +33,8 @@
 #define magenta13       #FF4AAB
 
 ! Cyan
-#define cyan6           #CCA3B1
-#define cyan14          #CC8FA3
+#define cyan6           #88BBB9
+#define cyan14          #5EA8A9
 
 ! White
 #define white7          #F2C2CA
