@@ -46,5 +46,8 @@ numlockx &
 # Set gif as background
 gifview -a -w root ~/wallpaper/rolly_rocket_resized.gif &
 
+# Load mpd server
+mpd &
+
 # Execute i3-wm
 exec i3
