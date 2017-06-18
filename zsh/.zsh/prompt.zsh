@@ -9,6 +9,10 @@ prompt=%#
 # %F/%f = start/stop text color
 # %B/%b = start/stop bold color
 
+# Load & call colors function
+autoload -Uz colors 
+colors
+
 # Enable vcs_info function
 autoload -Uz vcs_info
 
