@@ -20,6 +20,9 @@ URxvt.scrollBar:	false
 URxvt.cursorBlink:	true
 URxvt.iso14755:		false
 URxvt.iso14755_52:	false
+URxvt.keysym.Shift-Control-V:	eval:paste_clipboard
+URxvt.keysym.Shift-Control-C:	eval:selection_to_clipboard
+
 
 ! [Colors]
 *foreground: 		fg
