@@ -3,14 +3,10 @@
 ! Linked to in ~/.Xresources, ~/.xres/rofi.x
 
 ! Color variables
-#define fg		#ffffff
-#define bg		#242424
-#define _cursorColor    #FF4AAB
-#define _colorUL        #03A9F4
 
 ! Black
 #define black0          #4C4C4C
-#define black8          #333333
+#define black8          #242424
 
 ! Red
 #define red1            #E65C73
@@ -37,5 +33,11 @@
 #define cyan14          #5EA8A9
 
 ! White
-#define white7          #F2C2CA
-#define white15         #F2E6E8
+#define white7          #FFFFFF
+#define white15         #F2C2CA
+
+#define fg              white7
+#define bg              black8
+#define _cursorColor    magenta13
+#define _colorUL        blue12
+
