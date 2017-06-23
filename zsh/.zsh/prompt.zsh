@@ -5,13 +5,13 @@ hostname=%m
 pwd=%~
 newline=$'\n'
 prompt=%#
+git='${vcs_info_msg_0_}'
 
 # %F/%f = start/stop text color
 # %B/%b = start/stop bold color
 
 # Load & call colors function
-autoload -Uz colors 
-colors
+autoload -Uz colors && colors
 
 # Enable vcs_info function
 autoload -Uz vcs_info
@@ -35,8 +35,6 @@ precmd() {
 # Set parameter expansion, command substitution, & arithmetic expansion in prompt
 setopt PROMPT_SUBST
 
-PROMPT="%B┌──[%F{magenta}${username}%f@%F{magenta}${hostname}%f] \
-[%F{blue}${pwd}%f]${newline}\
+PROMPT="%B┌──[%F{magenta}${username}%f@%F{magenta}${hostname}%f] [%F{blue}${pwd}%f] ${git}${newline}\
 └─${prompt}%b "
 
-RPROMPT='%B${vcs_info_msg_0_}%b'
