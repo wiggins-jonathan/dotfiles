@@ -40,11 +40,13 @@ xrandr --output VGA-1 --mode 1920x1080
 # Set numlock key on 
 numlockx &
 
-# Uncomment to set background with feh script
+# Uncomment to set static desktop background with feh script that points to background file.
 # ~/.fehbg &
 
-# Set gif as background
-gifview -a -w root ~/wallpaper/rolly_rocket_resized.gif &
+# Use gifview wrapped with xwinwrap to draw an animated file to the root window (desktop background). 
+# You must use xwinwrap when using compton as it draws over the root window. 
+# See https://github.com/chjj/compton/issues/226
+xwinwrap -ov -fs -- gifview -w WID -a ~/wallpaper/rolly_rocket_resized.gif &
 
 # Load mpd server
 mpd &
