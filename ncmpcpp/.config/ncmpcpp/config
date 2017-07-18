@@ -7,7 +7,7 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 lyrics_directory = ~/.lyrics
 
 # Music directory
-mpd_music_dir = ~/music
+mpd_music_dir = ~/Music
 
 # [connection settings]
 
