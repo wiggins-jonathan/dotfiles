@@ -4,9 +4,11 @@ Repository for linux configuration files. Use git & GNU stow to deploy.
 * X11
 * i3-gaps
 * Zsh
-* urxvt
+* termite
 * rofi
 * polybar
 * neofetch
 * mpd
 * ncmpcpp
+* xbanish
+* numlockx

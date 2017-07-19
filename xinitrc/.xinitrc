@@ -37,8 +37,7 @@ fi
 # Set resolution 
 xrandr --output VGA-1 --mode 1920x1080
 
-# Set numlock key on 
-numlockx &
+#[Background]
 
 # Uncomment to set static desktop background with feh script that points to background file.
 # ~/.fehbg &
@@ -47,6 +46,14 @@ numlockx &
 # You must use xwinwrap when using compton as it draws over the root window. 
 # See https://github.com/chjj/compton/issues/226
 xwinwrap -ov -fs -- gifview -w WID -a ~/wallpaper/rolly_rocket_resized.gif &
+
+# [Programs]
+
+# Set numlock key on 
+numlockx &
+
+# Hide mouse pointer when typing
+xbanish &
 
 # Load mpd server
 mpd &
