@@ -23,7 +23,7 @@ zstyle ':vcs_info:*' enable git
 # See GATHERING INFORMATION FROM VERSION CONTROL SYSTEMS in the zshcontrib man page
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '[%F{red}↑%f]'
-zstyle ':vcs_info:*' unstagedstr '[%F{red}⚡%f]'
+zstyle ':vcs_info:*' unstagedstr '[%F{red}%f]'
 zstyle ':vcs_info:*' formats '[%F{red}%s-%b%f] %c%u'
 zstyle ':vcs_info:*' actionformats '[%F{magenta}%s-%b%f] %c%u'
 
