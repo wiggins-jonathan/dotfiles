@@ -7,7 +7,7 @@
 ! [Interface]
 rofi.bw:		1
 rofi.hide-scrollbar:	true
-rofi.terminal:		urxvt
+rofi.terminal:		termite
 
 ! [Colors] 
 ! See ~/.xres/colors.x for variables
