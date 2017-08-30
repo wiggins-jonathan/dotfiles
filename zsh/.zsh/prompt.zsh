@@ -1,5 +1,4 @@
-# Set variables for easier prompt expansion
-# See SIMPLE PROMPT ESCAPES in the zshmisc man page
+# Set variables for easier prompt expansion. See SIMPLE PROMPT ESCAPES in the zshmisc man page
 username=%n
 hostname=%m
 pwd=%~
@@ -13,14 +12,10 @@ git='${vcs_info_msg_0_}'
 # Load & call colors function
 autoload -Uz colors && colors
 
-# Enable vcs_info function
-autoload -Uz vcs_info
+autoload -Uz vcs_info			# Enable vcs_info function
+zstyle ':vcs_info:*' enable git		# Enable vcs info for git specifically
 
-# Enable vcs_info for git. Other vcs (svn, hr, csv, etc) can be enabled here
-zstyle ':vcs_info:*' enable git
-
-# Configure vcs_info in prompt 
-# See GATHERING INFORMATION FROM VERSION CONTROL SYSTEMS in the zshcontrib man page
+# Configure vcs_info in prompt. See GATHERING INFORMATION FROM VERSION CONTROL SYSTEMS in the zshcontrib man page
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '[%F{red}↑%f]'
 zstyle ':vcs_info:*' unstagedstr '[%F{red}%f]'
@@ -32,9 +27,7 @@ precmd() {
 	vcs_info
 }
 
-# Set parameter expansion, command substitution, & arithmetic expansion in prompt
-setopt PROMPT_SUBST
+setopt PROMPT_SUBST	# Set parameter expansion, command substitution, & arithmetic expansion in prompt
 
 PROMPT="%B┌──[%F{magenta}${username}%f@%F{magenta}${hostname}%f] [%F{blue}${pwd}%f] ${git}${newline}\
 └─${prompt}%b "
-

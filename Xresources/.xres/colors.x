@@ -2,7 +2,7 @@
 ! File for defining colors in config files. 
 ! Linked to in ~/.Xresources, ~/.xres/rofi.x
 
-! Color variables
+! [Color variables]
 
 ! Black
 #define black0          #4C4C4C
