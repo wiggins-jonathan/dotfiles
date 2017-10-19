@@ -39,7 +39,7 @@ xrandr --output VGA-1 --mode 1920x1080		# Set resolution
 # Use gifview wrapped with xwinwrap to draw an animated file to the root window (desktop background). 
 # You must use xwinwrap when using compton as it draws over the root window. 
 # See https://github.com/chjj/compton/issues/226
-xwinwrap -ov -fs -- gifview -w WID -a ~/wallpaper/rolly_rocket_resized.gif &
+xwinwrap -ov -fs -- gifview -w WID -a ~/Pictures/Wallpaper/Animated/ocean1080.gif &
 
 # [Programs]
 
