@@ -47,4 +47,4 @@ numlockx &	# Set numlock key on
 xbanish &	# Hide mouse pointer when typing
 mpd &		# Load mpd server
 exec i3		# Execute i3-wm
-compton &	# Execute compton
+compton -b	# Execute compton
