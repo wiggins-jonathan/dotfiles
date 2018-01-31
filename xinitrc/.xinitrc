@@ -34,12 +34,12 @@ xrandr --output VGA-1 --mode 1920x1080		# Set resolution
 # [Background]
 
 # Uncomment to set static desktop background with feh script that points to background file.
-# ~/.fehbg &
+ ~/.fehbg &
 
 # Use gifview wrapped with xwinwrap to draw an animated file to the root window (desktop background). 
 # You must use xwinwrap when using compton as it draws over the root window. 
 # See https://github.com/chjj/compton/issues/226
-xwinwrap -ov -fs -- gifview -w WID -a ~/Pictures/Wallpaper/Animated/ocean1080.gif &
+# xwinwrap -ov -fs -- gifview -w WID -a ~/Pictures/Wallpaper/Animated/ocean1080.gif &
 
 # [Programs]
 
@@ -47,3 +47,4 @@ numlockx &	# Set numlock key on
 xbanish &	# Hide mouse pointer when typing
 mpd &		# Load mpd server
 exec i3		# Execute i3-wm
+compton &	# Execute compton

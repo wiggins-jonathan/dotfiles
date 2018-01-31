@@ -23,9 +23,9 @@ height = 30
 offset-x = 10%
 offset-y = 10%
 radius = 0.0
-fixed-center = false
-bar-top-size = 10
-border-size = 10
+;border-size = 10
+border-top-size = 5
+border-bottom-size = 5
 border-color = #00000000
 
 background = ${colors.background}
@@ -39,6 +39,7 @@ padding-right = 3
 
 module-margin-left = 1
 module-margin-right = 2
+fixed-center = false
 
 font-0 = SauceCodePro:size=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
