@@ -46,7 +46,6 @@ border-bottom-size = 5
 border-left-size = 8
 border-right-size = 8
 border-color = #00000000
-
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -54,10 +53,10 @@ line-size = 3
 line-color = #f00
 
 padding-left = 0
-padding-right = 3
+padding-right = 0
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 fixed-center = false
 
 font-0 = Inconsolata Nerd Font:size=11:antialias=true;1
