@@ -312,13 +312,14 @@ ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
 type = custom/menu
-format-spacing = 1
-label-open = "  "
-label-open-foreground = ${colors.secondary}
+label-open = " ⏻ "
+label-open-foreground = ${colors.foreground}
+label-open-background = ${colors.magenta5}
 label-close =  cancel
-label-close-foreground = ${colors.secondary}
+label-close-foreground = ${colors.red9}
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator-foreground = ${colors.foreground}
+format-spacing = 1
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
 menu-0-1 = power off
