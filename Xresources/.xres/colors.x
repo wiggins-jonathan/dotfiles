@@ -1,6 +1,6 @@
 ! colors.x
 ! File for defining colors in config files. 
-! Linked to in ~/.Xresources, ~/.xres/rofi.x
+! Linked to in ~/.Xresources, ~/.xres/rofi.x, & ~/.config/polybar/config
 
 ! [Color variables]
 

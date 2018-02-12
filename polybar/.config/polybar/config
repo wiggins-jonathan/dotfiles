@@ -8,10 +8,28 @@
 ;====================================================;
 
 [colors]
-background = ${xrdb:background}
-background-alt = #444
-foreground = ${xrdb:foreground}
-foreground-alt = #555
+; Load from ~/.Xresources
+background	= ${xrdb:background}
+background-alt	= ${xrdb:background}
+foreground	= ${xrdb:foreground}
+foreground-alt	= ${xrdb:foreground}
+black0		= ${xrdb:color0}
+black8		= ${xrdb:color8}
+red1		= ${xrdb:color1}
+red9		= ${xrdb:color9}
+green2		= ${xrdb:color2}
+green10		= ${xrdb:color10}
+yellow3		= ${xrdb:color3}
+yellow11	= ${xrdb:color11}
+blue4		= ${xrdb:color4}
+blue12		= ${xrdb:color12}
+magenta5	= ${xrdb:color5}
+magenta13	= ${xrdb:color13}
+cyan6		= ${xrdb:color6}
+cyan14		= ${xrdb:color14}
+white7		= ${xrdb:color7}
+white15		= ${xrdb:color15}
+
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
