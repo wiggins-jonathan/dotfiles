@@ -190,7 +190,7 @@ interval = 2
 format-prefix-foreground = ${colors.red9}
 format-prefix = 
 
-label-foreground = ${colors.red9}
+label-foreground = ${colors.foreground}
 label = %percentage:3%%
 
 [module/memory]
@@ -200,7 +200,7 @@ interval = 2
 format-prefix-foreground = ${colors.yellow11}
 format-prefix = 
 
-label-foreground = ${colors.yellow11}
+label-foreground = ${colors.foreground}
 label = %percentage_used:3%%
 
 [module/wlan]
@@ -251,7 +251,7 @@ label = %date% %time%
 type = internal/alsa
 format-volume = <ramp-volume> <label-volume>
 
-label-volume-foreground = ${colors.blue12}
+label-volume-foreground = ${colors.foreground}
 label-volume = %percentage:3%%
 
 format-muted-foreground = ${colors.blue12}
