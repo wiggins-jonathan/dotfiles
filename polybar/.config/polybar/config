@@ -224,7 +224,7 @@ label = %percentage_used:3%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp2s0
 interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
@@ -334,14 +334,18 @@ ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
 type = custom/menu
+
 label-open = " ⏻ "
 label-open-foreground = ${colors.foreground}
 label-open-background = ${colors.magenta5}
+
 label-close =  cancel
 label-close-foreground = ${colors.red9}
+
 label-separator = |
 label-separator-foreground = ${colors.foreground}
 format-spacing = 1
+
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
 menu-0-1 = power off
