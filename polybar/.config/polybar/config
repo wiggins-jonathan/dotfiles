@@ -238,13 +238,17 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
+
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %a %b%eth"
+
 time = %H:%M
 time-alt = %H:%M:%S
-;format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
+
+format-prefix = 
+format-prefix-foreground = ${colors.cyan14}
+
 label = %date% %time%
 
 [module/volume]
@@ -254,8 +258,9 @@ format-volume = <ramp-volume> <label-volume>
 label-volume-foreground = ${colors.foreground}
 label-volume = %percentage:3%%
 
-format-muted-foreground = ${colors.blue12}
+format-muted-foreground = ${colors.red9}
 label-muted = %percentage:3%%
+label-muted-foreground = ${colors.foreground}
 format-muted-prefix = "  " 
 
 ramp-volume-foreground = ${colors.blue12}
