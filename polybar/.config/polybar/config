@@ -30,9 +30,9 @@ cyan14		= ${xrdb:color14}
 white7		= ${xrdb:color7}
 white15		= ${xrdb:color15}
 
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+primary 	= #ffb52a
+secondary 	= #e60053
+alert 		= #bd2c40
 
 [bar/top_bar]
 monitor = VGA-1
@@ -154,14 +154,33 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
-icon-prev = 
+format-online = <label-song>  <icon-prev> <toggle> <icon-next>
+format-stopped = 
+interval = 1
+
+icon-prev = 
 icon-stop = 
 icon-play = 
 icon-pause = 
-icon-next = 
-label-song-maxlen = 25
-label-song-ellipsis = true
+icon-next = 
+icon-prev-foreground = ${colors.blue4}
+icon-stop-foreground = ${colors.blue4}
+icon-play-foreground = ${colors.blue4}
+icon-pause-foreground = ${colors.blue4}
+icon-next-foreground = ${colors.blue4}
+
+label-song = "  %artist% - %title% "
+label-offline = 
+;label-song-maxlen = 50
+;label-song-ellipsis = true
+
+bar-progress-width = 45
+bar-progress-indicator = >
+bar-progress-fill = ::
+bar-progress-empty = ─
+bar-progress-indicator-foreground = ${colors.blue12}
+bar-progress-fill-foreground = ${colors.blue12}
+bar-progress-empty-foreground = ${colors.red9}
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -214,13 +233,13 @@ format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+;label-disconnected-foreground = ${colors.foreground}
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-foreground = ${colors.foreground}
 
 [module/eth]
 type = internal/network
