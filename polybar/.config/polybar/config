@@ -259,14 +259,14 @@ format-disconnected =
 type = internal/date
 interval = 1
 
+format-prefix = 
+format-prefix-foreground = ${colors.cyan14}
+
 date =
-date-alt = " %a %b%eth"
+date-alt = " %a %b %d |"
 
 time = %H:%M
 time-alt = %H:%M:%S
-
-format-prefix = 
-format-prefix-foreground = ${colors.cyan14}
 
 label = %date% %time%
 
