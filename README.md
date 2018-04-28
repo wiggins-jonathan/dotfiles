@@ -14,3 +14,4 @@ quickly deploy.
 * [xbanish](https://github.com/jcs/xbanish)
 * [numlockx](https://github.com/rg3/numlockx)
 * [compton](https://github.com/chjj/compton)
+* [neovim](https://github.com/neovim/neovim)
