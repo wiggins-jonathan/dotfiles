@@ -10,3 +10,4 @@ ncmpcpp
 xbanish
 numlockx
 compton
+neovim
