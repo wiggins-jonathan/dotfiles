@@ -2,7 +2,9 @@
 ! File for defining colors in config files. 
 ! Linked to in ~/.Xresources, ~/.xres/rofi.x, & ~/.config/polybar/config
 
-! [Color variables]
+!===================!
+!       Colors      !
+!===================!
 
 ! Black
 #define black0          #4C4C4C
@@ -40,4 +42,3 @@
 #define bg              black8
 #define _cursorColor    magenta13
 #define _colorUL        blue12
-
