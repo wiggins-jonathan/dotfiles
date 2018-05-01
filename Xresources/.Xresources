@@ -4,26 +4,35 @@
 #include ".xres/colors.x"
 #include ".xres/rofi.x"
 
-! [Font settings]
-URxvt.font:		xft:Inconsolata:size=11
+!==========================!
+!       Font settings      !
+!==========================!
+
+URxvt.font:		    xft:Inconsolata:size=11
 URxvt.boldFont:		xft:Inconsolata:style=Bold:size=11
 URxvt.letterSpace:	-1
 URxvt.lineSpace:	0
 xft.antialias:		1
 xft.hinting:		1
 xft.hintstyle: 		1
-xft.rgba:		rgb
+xft.rgba:		    rgb
 xft.lcdfilter:		lcddefault
 
-! [URxvt interface]
-URxvt.scrollBar:	false
-URxvt.cursorBlink:	true
-URxvt.iso14755:		false
-URxvt.iso14755_52:	false
+!===================!
+!       URxvt       !
+!===================!
+
+URxvt.scrollBar:	            false
+URxvt.cursorBlink:	            true
+URxvt.iso14755:		            false
+URxvt.iso14755_52:	            false
 URxvt.keysym.Shift-Control-V:	eval:paste_clipboard
 URxvt.keysym.Shift-Control-C:	eval:selection_to_clipboard
 
-! [Colors]
+!===================!
+!       Colors      !
+!===================!
+
 *foreground: 		fg
 *background: 		bg
 *cursorColor:	  	_cursorColor
