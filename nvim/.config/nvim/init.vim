@@ -1,6 +1,9 @@
-set textwidth=80        " Auto line break after 80 characters
+filetype plugin indent on
+syntax on
+
+set textwidth=80        " Auto line break pastes after 80 characters
 set colorcolumn=80      " Highlight auto line break limit
-set number              " Show line numbers on the left 
+set nu                  " Show line numbers on the left 
 
 "================"
 "       Tabs     " 
@@ -13,13 +16,19 @@ set shiftwidth=4    " Use 4 spaces for autoindent
 "==================="
 "       Colors      "
 "==================="
+" Run :hi or :so $VIMRUNTIME/syntax/hitest.vim for color & group info
 
-highlight LineNr ctermfg=grey   " Change line numbers to grey
+set background=dark
+hi LineNr ctermfg=grey      " Set line numbers to grey
+hi Search cterm=underline   " Underline search terms
+hi Search cterm=bold        " Bold search terms
+hi Comment ctermfg=grey     " Set comments to grey
+hi ColorColumn ctermbg=grey " Set the 80 character line to grey
 
 "==================="
 "       Search      "
 "==================="
 
-set ignorecase      " Ignore case...
-set smartcase       " Unless upper case is used
-nnoremap <esc> :noh<return><esc> " Press esc to clear search highlighting
+set ignorecase                      " Ignore case...
+set smartcase                       " Unless upper case is used
+nnoremap <esc> :noh<return><esc>    " Press esc to clear search highlighting
