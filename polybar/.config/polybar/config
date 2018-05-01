@@ -1,11 +1,7 @@
-;====================================================;
-;						     ;
-;    Polybar is made by jaagr @ 		     ;	
-;    https://github.com/jaagr/polybar		     ;
-;    This config @ 				     ;
-;    https://github.com/wiggins-jonathan/dotfiles    ;
-;						     ;
-;====================================================;
+;=======================================================================;						     
+;       Polybar is made by jaagr @ https://github.com/jaagr/polybar     ;		     
+;       This config @ https://github.com/wiggins-jonathan/dotfiles      ;    
+;=======================================================================;						     
 
 [colors]
 ; Load from ~/.Xresources
@@ -77,11 +73,9 @@ tray-padding = 2
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
 
-;=======================;
-;			;
-;	Modules		;
-;			;
-;=======================;
+;===================;			
+;       Modules     ;		
+;===================;			
 
 [module/xwindow]
 type = internal/xwindow
@@ -391,5 +385,3 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
-
-
