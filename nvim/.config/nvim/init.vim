@@ -4,6 +4,8 @@ syntax on
 set textwidth=80        " Auto line break pastes after 80 characters
 set colorcolumn=80      " Highlight auto line break limit
 set nu                  " Show line numbers on the left 
+set foldmethod=indent   " Fold on indent...
+set foldlevel=99        " For 99 indents
 
 "================"
 "       Tabs     " 
