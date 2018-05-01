@@ -9,10 +9,8 @@ git='${vcs_info_msg_0_}'
 # %F/%f = start/stop text color
 # %B/%b = start/stop bold color
 
-# Load & call colors function
-autoload -Uz colors && colors
-
-autoload -Uz vcs_info			# Enable vcs_info function
+autoload -Uz colors && colors       # Load & call colors function
+autoload -Uz vcs_info			    # Enable vcs_info function
 zstyle ':vcs_info:*' enable git		# Enable vcs info for git specifically
 
 # Configure vcs_info in prompt. See GATHERING INFORMATION FROM VERSION CONTROL SYSTEMS in the zshcontrib man page
