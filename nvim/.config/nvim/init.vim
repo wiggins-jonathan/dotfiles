@@ -1,11 +1,13 @@
-filetype plugin indent on
-syntax on
+filetype plugin indent on   " Turn on filetype & plugin detection for indents 
+syntax on                   " Enable syntax highlighting
+
+"==================="
+"       Layout      "
+"==================="
 
 set textwidth=80        " Auto line break pastes after 80 characters
 set colorcolumn=80      " Highlight auto line break limit
-set nu                  " Show line numbers on the left 
-set foldmethod=indent   " Fold on indent...
-set foldlevel=99        " For 99 indents
+set number              " Show line numbers on the left 
 
 "================"
 "       Tabs     " 
@@ -34,3 +36,13 @@ hi ColorColumn ctermbg=grey " Set the 80 character line to grey
 set ignorecase                      " Ignore case...
 set smartcase                       " Unless upper case is used
 nnoremap <esc> :noh<return><esc>    " Press esc to clear search highlighting
+
+"==================="
+"       Folding     "
+"==================="
+
+set foldmethod=indent   " Fold on indent...
+set foldlevel=99        " For 99 indents
+set foldlevelstart=10   " Open all folds less than 10 on file startup
+set foldnestmax=10      " Don't nest lines with a fold amount greater than 10
+nnoremap <space> za     " Use space to unfold instead of za
