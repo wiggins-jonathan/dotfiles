@@ -23,11 +23,11 @@ set shiftwidth=4    " Use 4 spaces for autoindent
 " Run :hi or :so $VIMRUNTIME/syntax/hitest.vim for color & group info
 
 set background=dark
-hi LineNr ctermfg=grey      " Set line numbers to grey
-hi Search cterm=underline   " Underline search terms
-hi Search cterm=bold        " Bold search terms
-hi Comment ctermfg=grey     " Set comments to grey
-hi ColorColumn ctermbg=grey " Set the 80 character line to grey
+hi LineNr ctermfg=grey                  " Set line numbers to grey
+hi Search cterm=bold                    " Bold search terms
+hi Comment ctermfg=grey                 " Set comments to grey
+hi ColorColumn ctermbg=grey             " Set the 80 character line to grey
+hi Statusline cterm=none ctermbg=black  " Statusline 
 
 "==================="
 "       Search      "
@@ -46,3 +46,17 @@ set foldlevel=99        " For 99 indents
 set foldlevelstart=10   " Open all folds less than 10 on file startup
 set foldnestmax=10      " Don't nest lines with a fold amount greater than 10
 nnoremap <space> za     " Use space to unfold instead of za
+
+"======================="
+"       Statusline      "
+"======================="
+
+" Left-justified text
+set laststatus=2        " Always show statusline
+set statusline=         " Clear statusline for when init.vim is reloaded
+set statusline+=%t\     " Show filename
+set statusline+=%y\     " Show filetype
+
+" Right-justified text
+set statusline+=%=      " Right justify text 
+set statusline+=%p%%\   " Show percentage of lines through file
