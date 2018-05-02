@@ -23,11 +23,11 @@ set shiftwidth=4    " Use 4 spaces for autoindent
 " Run :hi or :so $VIMRUNTIME/syntax/hitest.vim for color & group info
 
 set background=dark
-hi LineNr ctermfg=grey                  " Set line numbers to grey
+hi LineNr ctermbg=0 ctermfg=grey        " Set line numbers to grey
 hi Search cterm=bold                    " Bold search terms
-hi Comment ctermfg=grey                 " Set comments to grey
-hi ColorColumn ctermbg=grey             " Set the 80 character line to grey
-hi Statusline cterm=none ctermbg=black  " Statusline 
+hi Comment cterm=italic ctermfg=grey    " Set comments to grey & italic
+hi ColorColumn ctermbg=0                " Set the 80 character line to grey
+hi Statusline cterm=none ctermbg=0      " Set statusline bg to black
 
 "==================="
 "       Search      "
