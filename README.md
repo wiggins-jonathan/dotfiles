@@ -15,3 +15,4 @@ quickly deploy.
 * [numlockx](https://github.com/rg3/numlockx)
 * [compton](https://github.com/chjj/compton)
 * [neovim](https://github.com/neovim/neovim)
+* [dunst](https://dunst-project.org/)

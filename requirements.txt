@@ -11,3 +11,4 @@ xbanish
 numlockx
 compton
 neovim
+dunst
