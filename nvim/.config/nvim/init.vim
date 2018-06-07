@@ -1,3 +1,4 @@
+set nocompatible            " Turn off backwards compatibility fro vi
 filetype plugin indent on   " Turn on filetype & plugin detection for indents 
 syntax on                   " Enable syntax highlighting
 
@@ -60,3 +61,11 @@ set statusline+=%y\     " Show filetype
 " Right-justified text
 set statusline+=%=      " Right justify text 
 set statusline+=%p%%\   " Show percentage of lines through file
+
+"======================="
+"       File Search     "
+"======================="
+
+set path+=**            " Search into subfolders of current path using :find
+set wildmenu            " Tab iterates through matches using :find 
+
