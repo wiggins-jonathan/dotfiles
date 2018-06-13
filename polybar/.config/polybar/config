@@ -5,25 +5,25 @@
 
 [colors]
 ; Load from ~/.Xresources
-background	= ${xrdb:background}
-foreground	= ${xrdb:foreground}
-foreground-alt	= ${xrdb:foreground}
-black0		= ${xrdb:color0}
-black8		= ${xrdb:color8}
-red1		= ${xrdb:color1}
-red9		= ${xrdb:color9}
-green2		= ${xrdb:color2}
-green10		= ${xrdb:color10}
-yellow3		= ${xrdb:color3}
-yellow11	= ${xrdb:color11}
-blue4		= ${xrdb:color4}
-blue12		= ${xrdb:color12}
-magenta5	= ${xrdb:color5}
-magenta13	= ${xrdb:color13}
-cyan6		= ${xrdb:color6}
-cyan14		= ${xrdb:color14}
-white7		= ${xrdb:color7}
-white15		= ${xrdb:color15}
+background	=       ${xrdb:background}
+foreground	=       ${xrdb:foreground}
+foreground-alt	=   ${xrdb:foreground}
+black0		=       ${xrdb:color0}
+black8		=       ${xrdb:color8}
+red1		=       ${xrdb:color1}
+red9		=       ${xrdb:color9}
+green2		=       ${xrdb:color2}
+green10		=       ${xrdb:color10}
+yellow3		=       ${xrdb:color3}
+yellow11	=       ${xrdb:color11}
+blue4		=       ${xrdb:color4}
+blue12		=       ${xrdb:color12}
+magenta5	=       ${xrdb:color5}
+magenta13	=       ${xrdb:color13}
+cyan6		=       ${xrdb:color6}
+cyan14		=       ${xrdb:color14}
+white7		=       ${xrdb:color7}
+white15		=       ${xrdb:color15}
 
 primary 	= #ffb52a
 secondary 	= #e60053
@@ -55,7 +55,7 @@ font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
 
 modules-left = i3
 modules-center = mpd
-modules-right = volume memory cpu date wlan powermenu
+modules-right = volume memory cpu wlan date 
 
 tray-position = right
 tray-padding = 2
@@ -279,8 +279,8 @@ format-prefix-foreground = ${colors.cyan14}
 date =
 date-alt = " %a %b %d |"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = "%H:%M "
+time-alt = "%H:%M:%S "
 
 label = %date% %time%
 
