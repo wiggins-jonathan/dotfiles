@@ -7,7 +7,6 @@
 ; Load from ~/.Xresources
 background	=       ${xrdb:background}
 foreground	=       ${xrdb:foreground}
-foreground-alt	=   ${xrdb:foreground}
 black0		=       ${xrdb:color0}
 black8		=       ${xrdb:color8}
 red1		=       ${xrdb:color1}
@@ -24,10 +23,6 @@ cyan6		=       ${xrdb:color6}
 cyan14		=       ${xrdb:color14}
 white7		=       ${xrdb:color7}
 white15		=       ${xrdb:color15}
-
-primary 	= #ffb52a
-secondary 	= #e60053
-alert 		= #bd2c40
 
 [global/wm]
 margin-top = 5
@@ -125,12 +120,11 @@ label-unmounted = %mountpoint% not mounted
 type = internal/bspwm
 label-focused = %index%
 label-focused-background = ${colors.background}
-label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 label-occupied = %index%
 label-occupied-padding = 2
 label-urgent = %index%!
-label-urgent-background = ${colors.alert}
+label-urgent-background = ${colors.red9}
 label-urgent-padding = 2
 label-empty = %index%
 label-empty-foreground = ${colors.foreground}
@@ -160,8 +154,8 @@ wrapping-scroll = false
 reverse-scroll = false
 
 label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
+label-mode-foreground = ${colors.foreground} 
+label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
@@ -182,7 +176,7 @@ label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %icon%
-label-urgent-background = ${colors.alert}
+label-urgent-background = ${colors.red9}
 label-urgent-padding = ${self.label-focused-padding}
 
 [module/mpd]
@@ -271,11 +265,9 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
 label-connected = %essid%
 format-disconnected =
 ;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground}
 ramp-signal-0 = 
@@ -299,7 +291,6 @@ label-connected = %local_ip%
 format-disconnected =
 
 ;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground}
 
