@@ -52,12 +52,12 @@ border-bottom-size = 5
 border-left-size = 8
 border-right-size = 8
 border-color = #00000000
-background = ${colors.background}
+background = #00242424 
 foreground = ${colors.foreground}
 padding-left = 0
 padding-right = 0
-module-margin-left = 1
-module-margin-right = 1
+module-margin-left = 0
+module-margin-right = 0
 fixed-center = true
 
 font-0 = "Source Code Pro:size=11:antialias=true;1"
@@ -71,8 +71,6 @@ modules-right = volume memory cpu wlan date
 
 tray-position = right
 tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -160,7 +158,7 @@ label-mode-background = ${colors.primary}
 label-focused = %icon%
 label-focused-background = #000000
 label-focused-foreground = ${colors.magenta13}
-label-focused-padding = 2
+label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %icon%
@@ -180,9 +178,11 @@ label-urgent-padding = ${self.label-focused-padding}
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <toggle> <icon-next>
-format-stopped = 
 interval = 1
+format-online = <label-song>  <icon-prev> <toggle> <icon-next>
+format-online-background = #000000
+format-online-padding = 1
+format-stopped = 
 
 icon-prev = 
 icon-stop = 
@@ -195,7 +195,7 @@ icon-play-foreground = ${colors.blue4}
 icon-pause-foreground = ${colors.blue4}
 icon-next-foreground = ${colors.blue4}
 
-label-song = "  %artist% - %title% "
+label-song =  %artist% - %title% 
 label-offline = 
 ;label-song-maxlen = 50
 ;label-song-ellipsis = true
@@ -231,6 +231,8 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
+format-background = #000000
+format-padding = 1
 
 format-prefix-foreground = ${colors.red9}
 format-prefix = 
@@ -241,6 +243,8 @@ label = %percentage:3%%
 [module/memory]
 type = internal/memory
 interval = 2
+format-background = #000000
+format-padding = 1
 
 format-prefix-foreground = ${colors.yellow11}
 format-prefix = 
@@ -284,21 +288,26 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 1
+format-background = #000000
+format-padding = 1
 
 format-prefix = 
 format-prefix-foreground = ${colors.cyan14}
+format-prefix-padding-right = 1
 
 date =
-date-alt = " %a %b %d |"
+date-alt = %a %b %d |
 
-time = "%H:%M "
-time-alt = "%H:%M:%S "
+time = %H:%M
+time-alt = %H:%M:%S
 
 label = %date% %time%
 
 [module/volume]
 type = internal/alsa
 format-volume = <ramp-volume> <label-volume>
+format-volume-background = #000000
+format-volume-padding = 1
 
 label-volume-foreground = ${colors.foreground}
 label-volume = %percentage:3%%
@@ -306,17 +315,17 @@ label-volume = %percentage:3%%
 format-muted-foreground = ${colors.red9}
 label-muted = %percentage:3%%
 label-muted-foreground = ${colors.foreground}
-format-muted-prefix = "  "
+format-muted-prefix = 
 
 ramp-volume-foreground = ${colors.blue12}
-ramp-volume-0 = " "
-ramp-volume-1 = " "
-ramp-volume-2 = "  "
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
 ramp-headphones-foreground = ${colors.blue12}
-ramp-headphones-0 = "  "
-ramp-headphones-1 = "  "
-ramp-headphones-2 = "  "
+ramp-headphones-0 =  
+ramp-headphones-1 =  
+ramp-headphones-2 =  
 
 [module/battery]
 type = internal/battery
