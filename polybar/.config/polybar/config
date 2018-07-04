@@ -301,7 +301,7 @@ format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+;label-disconnected-foreground = ${colors.foreground}
 
 [module/date]
 type = internal/date
@@ -373,19 +373,31 @@ animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
+
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input
 thermal-zone = 0
-warn-temperature = 60
+warn-temperature = 90
+units = true
+
 format = <ramp> <label>
-format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+
 label = %temperature%
+label-background = ${colors.background}
+label-foreground = ${colors.foreground}
+label-padding = 1
+
 label-warn = %temperature%
-label-warn-foreground = ${colors.secondary}
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+label-warn-foreground = ${colors.red9}
+label-warn-background = ${colors.background}
+label-warn-padding = 1
+
+ramp-background = ${colors.background}
+ramp-foreground = ${colors.foreground}
+ramp-padding = 1
+ramp-0 = 1 
+ramp-1 = 2 
+ramp-2 = 3 
 
 [module/powermenu]
 type = custom/menu
