@@ -63,7 +63,7 @@ font-1 = "Font Awesome 5 Brands:size=12:antialias=true;1"
 font-2 = "Font Awesome 5 Free Regular:size=12:antialias=true;1"
 font-3 = "Font Awesome 5 Free Solid:size=12:antialias=true;1"
 
-modules-left = i3
+modules-left = i3 
 modules-center = mpd
 modules-right = volume memory cpu wlan date 
 
@@ -91,16 +91,18 @@ label = %title:0:30:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
+
 blacklist-0 = num lock
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+format-padding = 1
+format-prefix = 
+format-prefix-padding = 1
+
+label-layout = %name%
+label-indicator-padding = 1
+label-indicator-background = ${colors.background}
 
 [module/filesystem]
 type = internal/fs
