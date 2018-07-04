@@ -60,9 +60,10 @@ module-margin-left = 1
 module-margin-right = 1
 fixed-center = true
 
-font-0 = Inconsolata Nerd Font:size=11:antialias=true;1
-font-1 = Material Icons:antialias=false:size=12;1
-font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-0 = "Source Code Pro:size=11:antialias=true;1"
+font-1 = "Font Awesome 5 Brands:size=12:antialias=true;1"
+font-2 = "Font Awesome 5 Free Regular:size=12:antialias=true;1"
+font-3 = "Font Awesome 5 Free Solid:size=12:antialias=true;1"
 
 modules-left = i3
 modules-center = mpd
@@ -232,7 +233,7 @@ type = internal/cpu
 interval = 2
 
 format-prefix-foreground = ${colors.red9}
-format-prefix = 
+format-prefix = 
 
 label-foreground = ${colors.foreground}
 label = %percentage:3%%
@@ -242,7 +243,7 @@ type = internal/memory
 interval = 2
 
 format-prefix-foreground = ${colors.yellow11}
-format-prefix = 
+format-prefix = 
 
 label-foreground = ${colors.foreground}
 label = %percentage_used:3%%
@@ -305,19 +306,17 @@ label-volume = %percentage:3%%
 format-muted-foreground = ${colors.red9}
 label-muted = %percentage:3%%
 label-muted-foreground = ${colors.foreground}
-format-muted-prefix = "  " 
+format-muted-prefix = "  "
 
 ramp-volume-foreground = ${colors.blue12}
 ramp-volume-0 = " "
 ramp-volume-1 = " "
-ramp-volume-2 = " "
-ramp-volume-3 = " "
+ramp-volume-2 = "  "
 
 ramp-headphones-foreground = ${colors.blue12}
 ramp-headphones-0 = "  "
 ramp-headphones-1 = "  "
-ramp-headphones-2 = "  "
-ramp-headphones-3 = "  "
+ramp-headphones-2 = "  "
 
 [module/battery]
 type = internal/battery
