@@ -63,7 +63,7 @@ font-1 = "Font Awesome 5 Brands:size=12:antialias=true;1"
 font-2 = "Font Awesome 5 Free Regular:size=12:antialias=true;1"
 font-3 = "Font Awesome 5 Free Solid:size=12:antialias=true;1"
 
-modules-left = i3 
+modules-left = i3
 modules-center = mpd
 modules-right = volume memory cpu wlan date 
 
@@ -219,18 +219,23 @@ bar-progress-empty-foreground = ${colors.red9}
 
 [module/xbacklight]
 type = internal/xbacklight
+
 format = <label> <bar>
-label = BL
+label =  
+
 bar-width = 10
+
 bar-indicator = |
-bar-indicator-foreground = #ff
+bar-indicator-foreground = ${colors.foreground}
 bar-indicator-font = 2
+
 bar-fill = ─
 bar-fill-font = 2
-bar-fill-foreground = #9f78e1
+bar-fill-foreground = ${colors.foreground} 
+
 bar-empty = ─
 bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+bar-empty-foreground = ${colors.foreground}
 
 [module/backlight-acpi]
 inherit = module/xbacklight
