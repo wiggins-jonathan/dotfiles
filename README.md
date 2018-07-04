@@ -16,3 +16,4 @@ quickly deploy.
 * [compton](https://github.com/chjj/compton)
 * [neovim](https://github.com/neovim/neovim)
 * [dunst](https://dunst-project.org/)
+* [Font Awesome](https://fontawesome.com/)
