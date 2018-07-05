@@ -54,5 +54,5 @@ xrandr --output VGA-1 --mode 1920x1080		# Set resolution
 numlockx &	    # Set numlock key on 
 xbanish &	    # Hide mouse pointer when typing
 mpd &		    # Load mpd server
-compton -b &	# Execute compton
-exec i3		    # Execute i3-wm
+compton -b &	# Start compton
+exec bspwm      # Start bspwm
