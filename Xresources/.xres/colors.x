@@ -7,36 +7,36 @@
 !===================!
 
 ! Black
-#define black0          #4C4C4C
+#define black0          #000000
 #define black8          #242424
 
 ! Red
-#define red1            #E65C73
-#define red9            #BE0E50
+#define red1            #e65c73
+#define red9            #be0e50
 
 ! Green
-#define green2          #ABFF4A
-#define green10         #50FF4A
+#define green2          #abff4a
+#define green10         #50ff4a
 
 ! Yellow
-#define yellow3         #CCA3B1
-#define yellow11        #CC5FA3
+#define yellow3         #cca3b1
+#define yellow11        #cc5fa3
 
 ! Blue
-#define blue4           #27ADA8
-#define blue12          #03A9F4
+#define blue4           #27ada8
+#define blue12          #03a9f4
 
 ! Magenta
-#define magenta5        #CC52A3
-#define magenta13       #FF4AAB
+#define magenta5        #cc52a3
+#define magenta13       #ff4aab
 
 ! Cyan
-#define cyan6           #88BBB9
-#define cyan14          #5EA8A9
+#define cyan6           #88bbb9
+#define cyan14          #5ea8a9
 
 ! White
-#define white7          #FFFFFF
-#define white15         #F2C2CA
+#define white7          #ffffff
+#define white15         #f2c2cA
 
 #define fg              white7
 #define bg              black8
