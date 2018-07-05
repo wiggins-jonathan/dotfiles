@@ -182,10 +182,14 @@ label-urgent-padding = ${self.label-focused-padding}
 [module/mpd]
 type = internal/mpd
 interval = 1
+
 format-online = <label-song>  <icon-prev> <toggle> <icon-next>
 format-online-background = ${colors.background} 
 format-online-padding = 1
 format-stopped = 
+
+label-song =  %artist% - %title% 
+label-offline = 
 
 icon-prev = 
 icon-stop = 
@@ -197,11 +201,6 @@ icon-stop-foreground = ${colors.blue4}
 icon-play-foreground = ${colors.blue4}
 icon-pause-foreground = ${colors.blue4}
 icon-next-foreground = ${colors.blue4}
-
-label-song =  %artist% - %title% 
-label-offline = 
-;label-song-maxlen = 50
-;label-song-ellipsis = true
 
 bar-progress-width = 45
 bar-progress-indicator = >
@@ -418,5 +417,3 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
-
-; vim:ft=dosini
