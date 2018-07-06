@@ -5,76 +5,68 @@
 
 [colors]
 ; Load from ~/.Xresources
-background	=       ${xrdb:background}
-foreground	=       ${xrdb:foreground}
-black0		=       ${xrdb:color0}
-black8		=       ${xrdb:color8}
-red1		=       ${xrdb:color1}
-red9		=       ${xrdb:color9}
-green2		=       ${xrdb:color2}
-green10		=       ${xrdb:color10}
-yellow3		=       ${xrdb:color3}
-yellow11	=       ${xrdb:color11}
-blue4		=       ${xrdb:color4}
-blue12		=       ${xrdb:color12}
-magenta5	=       ${xrdb:color5}
-magenta13	=       ${xrdb:color13}
-cyan6		=       ${xrdb:color6}
-cyan14		=       ${xrdb:color14}
-white7		=       ${xrdb:color7}
-white15		=       ${xrdb:color15}
+background  = ${xrdb:background}
+foreground  = ${xrdb:foreground}
+black0      = ${xrdb:color0}
+black8		= ${xrdb:color8}
+red1		= ${xrdb:color1}
+red9		= ${xrdb:color9}
+green2		= ${xrdb:color2}
+green10		= ${xrdb:color10}
+yellow3		= ${xrdb:color3}
+yellow11	= ${xrdb:color11}
+blue4		= ${xrdb:color4}
+blue12		= ${xrdb:color12}
+magenta5	= ${xrdb:color5}
+magenta13	= ${xrdb:color13}
+cyan6		= ${xrdb:color6}
+cyan14		= ${xrdb:color14}
+white7		= ${xrdb:color7}
+white15		= ${xrdb:color15}
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top      = 5
+margin-bottom   = 5
 
 [settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
+screenchange-reload = true  ; Reload bar if screen dimensions change
 
-[bar/top_bar]
+[bar/top-bar]
 monitor = VGA-1
-width = 100%
-height = 30
+
+width   = 100%
+height  = 30
+padding = 0
+
 offset-x = 0%
 offset-y = 0%
-radius = 0.0 
-border-top-size = 5
-border-bottom-size = 5
-border-left-size = 8
-border-right-size = 8
-border-color = #00000000
+
+radius = 0.0    ; No rounded corners
+
+border-top-size     = 5
+border-bottom-size  = 5
+border-left-size    = 8
+border-right-size   = 8
+border-color        = #00000000 ; 100% transparent border
+
 background = #00${colors.background}
 foreground = ${colors.foreground}
-padding = 0
-module-margin = 0
-fixed-center = true
 
 font-0 = "Source Code Pro:style=Bold:size=11:antialias=true;1"
 font-1 = "Font Awesome 5 Brands:size=12:antialias=true;1"
 font-2 = "Font Awesome 5 Free Regular:size=12:antialias=true;1"
 font-3 = "Font Awesome 5 Free Solid:size=12:antialias=true;1"
 
-modules-left = bspwm
-modules-center = mpd
-modules-right = volume memory cpu wlan date 
+modules-left    = bspwm 
+modules-center  = mpd
+modules-right   = volume memory cpu wlan date 
+module-margin   = 0
+fixed-center    = true
 
-tray-position = right
-tray-padding = 2
+tray-position   = right
+tray-padding    = 2
 
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+enable-ipc = true
 
 ;===================;			
 ;       Modules     ;		
@@ -82,30 +74,35 @@ tray-padding = 2
 
 [module/xwindow]
 type = internal/xwindow
+
 label = %title:0:30:...%
+
+format-background   = ${colors.background}
+format-foreground   = ${colors.foreground}
+format-padding      = 1
 
 [module/xkeyboard]
 type = internal/xkeyboard
 
 blacklist-0 = num lock
 
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
-format-padding = 1
-format-prefix = 
-format-prefix-padding = 1
+format-background       = ${colors.background}
+format-foreground       = ${colors.foreground}
+format-padding          = 1
+format-prefix           = 
+format-prefix-padding   = 1
 
-label-layout = %name%
-label-indicator-padding = 1
-label-indicator-background = ${colors.background}
+label-layout                = %name%
+label-indicator-padding     = 1
+label-indicator-background  = ${colors.background}
 
 [module/filesystem]
 type = internal/fs
 
-interval = 25
-mount-0 = /
-mount-1 = /home
-spacing = 0
+interval    = 25
+mount-0     = /
+mount-1     = /home
+spacing     = 0
 
 label-mounted-background = ${colors.background}
 label-mounted-foreground = ${colors.foreground}
@@ -131,11 +128,11 @@ ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-default = 
 
-enable-click = true
-enable-scroll = true 
+enable-click    = true
+enable-scroll   = true 
 wrapping-scroll = false 
-reverse-scroll = false 
-pin-workspaces = false
+reverse-scroll  = false 
+pin-workspaces  = false
 
 format = <label-state> 
 
@@ -180,11 +177,11 @@ ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-default = 
 
-enable-click = true
-enable-scroll = true
+enable-click    = true
+enable-scroll   = true
 wrapping-scroll = false
-reverse-scroll = false
-index-sort = true
+reverse-scroll  = false
+index-sort      = true
 
 format = <label-state> <label-mode>
 
@@ -272,30 +269,35 @@ card = intel_backlight
 
 [module/cpu]
 type = internal/cpu
+
 interval = 2
+
 format-background = ${colors.background} 
 format-padding = 1
 
 format-prefix-foreground = ${colors.red9}
 format-prefix = 
 
-label-foreground = ${colors.foreground}
 label = %percentage:3%%
+label-foreground = ${colors.foreground}
 
 [module/memory]
 type = internal/memory
+
 interval = 2
+
 format-background = ${colors.background} 
 format-padding = 1
 
 format-prefix-foreground = ${colors.yellow11}
 format-prefix = 
 
-label-foreground = ${colors.foreground}
 label = %percentage_used:3%%
+label-foreground = ${colors.foreground}
 
 [module/wlan]
 type = internal/network
+
 interface = wlp2s0
 interval = 3.0
 format-connected = <ramp-signal> <label-connected>
@@ -304,6 +306,7 @@ format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground}
+
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
@@ -330,7 +333,9 @@ format-disconnected =
 
 [module/date]
 type = internal/date
+
 interval = 1
+
 format-background = ${colors.background} 
 format-padding = 1
 
@@ -348,32 +353,35 @@ label = %date% %time%
 
 [module/volume]
 type = internal/alsa
+
 format-volume = <ramp-volume> <label-volume>
 format-volume-background = ${colors.background} 
 format-volume-padding = 1
 
-label-volume-foreground = ${colors.foreground}
 label-volume = %percentage:3%%
+label-volume-foreground = ${colors.foreground}
 
 format-muted-background = ${self.format-volume-background}
 format-muted-foreground = ${colors.red9}
 format-muted-padding = ${self.format-volume-padding}
-label-muted = %percentage:3%%
-label-muted-foreground = ${colors.foreground}
 format-muted-prefix = 
 
-ramp-volume-foreground = ${colors.blue12}
+label-muted = %percentage:3%%
+label-muted-foreground = ${colors.foreground}
+
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+ramp-volume-foreground = ${colors.blue12}
 
-ramp-headphones-foreground = ${colors.blue12}
 ramp-headphones-0 =  
 ramp-headphones-1 =  
 ramp-headphones-2 =  
+ramp-headphones-foreground = ${colors.blue12}
 
 [module/battery]
 type = internal/battery
+
 battery = BAT0
 adapter = AC
 full-at = 98
@@ -417,12 +425,12 @@ label-warn-foreground = ${colors.red9}
 label-warn-background = ${colors.background}
 label-warn-padding = 1
 
-ramp-background = ${colors.background}
-ramp-foreground = ${colors.foreground}
-ramp-padding = 1
 ramp-0 = 1 
 ramp-1 = 2 
 ramp-2 = 3 
+ramp-background = ${colors.background}
+ramp-foreground = ${colors.foreground}
+ramp-padding = 1
 
 [module/powermenu]
 type = custom/menu
@@ -440,18 +448,18 @@ label-close-foreground = ${colors.red9}
 label-separator = |
 label-separator-foreground = ${colors.foreground}
 
-menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
-menu-0-1 = power off
-menu-0-1-exec = menu-open-2
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
+menu-0-0        = reboot
+menu-0-0-exec   = menu-open-1
+menu-0-1        = power off
+menu-0-1-exec   = menu-open-2
+menu-1-0        = cancel
+menu-1-0-exec   = menu-open-0
+menu-1-1        = reboot
+menu-1-1-exec   = sudo reboot
+menu-2-0        = power off
+menu-2-0-exec   = sudo poweroff
+menu-2-1        = cancel
+menu-2-1-exec   = menu-open-0
 
 ; Set vim syntax highlighting
 ; vim:ft=dosini

@@ -7,4 +7,4 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 0.01; done
 
 # Launch polybar
-polybar top_bar
+polybar top-bar
