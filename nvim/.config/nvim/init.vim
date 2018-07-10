@@ -68,4 +68,3 @@ set statusline+=%p%%\   " Show percentage of lines through file
 
 set path+=**            " Search into subfolders of current path using :find
 set wildmenu            " Tab iterates through matches using :find 
-
