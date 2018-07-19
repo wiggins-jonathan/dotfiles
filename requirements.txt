@@ -1,4 +1,4 @@
-X11
+xorg-server
 i3-gaps
 zsh
 termite

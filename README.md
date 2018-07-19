@@ -17,3 +17,11 @@ quickly deploy.
 * [neovim](https://github.com/neovim/neovim)
 * [dunst](https://dunst-project.org/)
 * [Font Awesome](https://fontawesome.com/)
+
+## How to Install
+
+# 1. Clone repo
+`$ git clone git@github.com:wiggins-jonathan/dotfiles.git`
+
+# 2. Run installer.sh to use gnu stow to symlink all folders in the repo to home.
+`$ ./install.sh`
