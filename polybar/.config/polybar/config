@@ -1,7 +1,14 @@
-;=======================================================================;						     
-;       Polybar is made by jaagr @ https://github.com/jaagr/polybar     ;		     
-;       This config @ https://github.com/wiggins-jonathan/dotfiles      ;    
-;=======================================================================;						     
+;===============================================;
+;                    __      __                 ;
+;       ____  ____  / /_  __/ /_  ____ ______   ;
+;      / __ \/ __ \/ / / / / __ \/ __ `/ ___/   ;
+;     / /_/ / /_/ / / /_/ / /_/ / /_/ / /       ;
+;    / .___/\____/_/\__, /_.___/\__,_/_/        ;
+;   /_/            /____/                       ;
+;===============================================;
+
+; Reload polybar in place with polybar-msg cmd restart
+; enable-ipc must = true for this to work
 
 [colors]
 ; Load from ~/.Xresources
@@ -300,19 +307,36 @@ type = internal/network
 
 interface = wlp2s0
 interval = 3.0
-format-connected = <ramp-signal> <label-connected>
-label-connected = %essid%
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground}
+accumulate-stats = true
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+format-connected-background = ${colors.background}
+format-connected-padding = 0
+format-connected = <label-connected>
+
+format-connected-prefix-foreground = ${colors.green2}
+format-connected-prefix-padding = 1
+format-connected-prefix =   
+
+label-connected-foreground = ${colors.foreground} 
+label-connected = %essid%
+
 ramp-signal-foreground = ${colors.foreground}
+ramp-signal-0 = 1
+ramp-signal-1 = 2
+ramp-signal-2 = 3
+ramp-signal-3 = 4
+ramp-signal-4 = 5
+
+format-disconnected-background = ${colors.background}
+format-disconnected-padding = 0
+format-disconnected = <label-disconnected>
+
+format-disconnected-prefix-foreground = ${colors.red9}
+format-disconnected-prefix-padding = 1
+format-disconnected-prefix = 
+
+label-disconnected-foreground = ${colors.red9}
+label-disconnected = %ifname% disconnected
 
 [module/eth]
 type = internal/network
