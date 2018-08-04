@@ -1,5 +1,6 @@
 xorg-server
-i3-gaps
+bspwm
+sxhkd
 zsh
 termite
 rofi

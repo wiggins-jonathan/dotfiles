@@ -3,7 +3,8 @@ quickly deploy.
 
 # Dependencies
 * [X11](https://www.x.org/wiki/)
-* [i3-gaps](https://github.com/Airblader/i3)
+* [bspwm](https://github.com/baskerville/bspwm)
+* [sxhkd](https://github.com/baskerville/sxhkd)
 * [zsh](https://www.zsh.org/)
 * [termite](https://github.com/thestinger/termite)
 * [rofi](https://github.com/DaveDavenport/rofi)
@@ -18,10 +19,11 @@ quickly deploy.
 * [dunst](https://dunst-project.org/)
 * [Font Awesome](https://fontawesome.com/)
 
-## How to Install
+# How to Install
 
-# 1. Clone repo
+## 1. Clone repo
 `$ git clone git@github.com:wiggins-jonathan/dotfiles.git`
 
-# 2. Run installer.sh to use gnu stow to symlink all folders in the repo to home.
+## 2. Run installer.sh 
+Installer.sh will use gnu stow to symlink all folders in the repo to $HOME.
 `$ ./install.sh`
