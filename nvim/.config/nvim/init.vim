@@ -1,3 +1,12 @@
+"==========================================="
+"                             _             "
+"      ____  ___  ____ _   __(_)___ ___     "
+"     / __ \/ _ \/ __ \ | / / / __ `__ \    "
+"    / / / /  __/ /_/ / |/ / / / / / / /    "
+"   /_/ /_/\___/\____/|___/_/_/ /_/ /_/     "
+"                                           "
+"==========================================="
+
 set nocompatible            " Turn off backwards compatibility fro vi
 filetype plugin indent on   " Turn on filetype & plugin detection for indents 
 syntax on                   " Enable syntax highlighting
@@ -15,8 +24,8 @@ set number              " Show line numbers on the left
 "================"
 
 set expandtab       " Convert tabs to white space
-set tabstop=4       " Use 4 spaces for tab
-set shiftwidth=4    " Use 4 spaces for autoindent
+set tabstop=4       " Width of TAB set to 4 spaces
+set shiftwidth=4    " Width of autoindent set to 4 spaces
 
 "==================="
 "       Colors      "
