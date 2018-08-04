@@ -26,4 +26,5 @@ quickly deploy.
 
 ## 2. Run installer.sh 
 Installer.sh will use gnu stow to symlink all folders in the repo to $HOME.
+
 `$ ./install.sh`
