@@ -13,3 +13,4 @@ numlockx
 compton
 neovim
 dunst
+tmux
