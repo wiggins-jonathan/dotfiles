@@ -1,11 +1,10 @@
-##############################################################
-## This is the example bindings file. Copy it to            ##
-## ~/.ncmpcpp/bindings or $XDG_CONFIG_HOME/ncmpcpp/bindings ##
-## and set up your preferences                              ##
-##############################################################
-##
+#      ____  _________ ___  ____  _________  ____
+#     / __ \/ ___/ __ `__ \/ __ \/ ___/ __ \/ __ \
+#    / / / / /__/ / / / / / /_/ / /__/ /_/ / /_/ /
+#   /_/ /_/\___/_/ /_/ /_/ .___/\___/ .___/ .___/
+#                       /_/        /_/   /_/
+
 ##### General rules #####
-##
 ## 1) Because each action has runtime checks whether it's
 ##    ok to run it, a few actions can be bound to one key.
 ##    Actions will be bound in order given in configuration
@@ -148,6 +147,47 @@
 ##
 ##  - set_volume
 ##
+
+#Add vim--like key bindings
+def_key "j"
+    scroll_down
+def_key "k"
+    scroll_up
+def_key "h"
+    previous_column
+def_key "l"
+    next_column
+
+def_key "g"
+    move_home
+def_key "G"
+    move_end
+def_key "ctrl-f"
+    page_down
+def_key "ctrl-b"
+    page_up
+
+def_key "J"
+    move_selected_items_down
+def_key "K"
+    move_selected_items_up
+
+def_key "d"
+    delete_playlist_items
+def_key "d"
+    delete_browser_items
+
+def_key "v"
+    select_item
+
+def_key "."
+    show_lyrics
+
+def_key "n"
+    next_found_item
+def_key "N"
+    previous_found_item
+
 #
 #def_key "mouse"
 #  mouse_event
@@ -540,4 +580,3 @@
 #
 #def_key "q"
 #  quit
-#
