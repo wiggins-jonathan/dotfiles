@@ -35,7 +35,7 @@ set shiftwidth=2    " Width of autoindent set to 2 spaces
 set background=dark                     
 hi LineNr ctermbg=0 ctermfg=grey        " Set line numbers to grey
 hi Search cterm=reverse                 " Reverse color on search terms
-hi Comment cterm=italic ctermfg=grey    " Set comments to grey & italic
+hi Comment cterm=reverse ctermfg=grey   " Set comments to grey & reverse
 hi ColorColumn ctermbg=0                " Set the 80 character line to grey
 hi Statusline cterm=none ctermbg=0      " Set statusline bg to black
 
