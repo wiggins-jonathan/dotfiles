@@ -7,7 +7,7 @@
 "                                           "
 "==========================================="
 
-set nocompatible            " Turn off backwards compatibility fro vi
+set nocompatible            " Turn off backwards compatibility for vi
 filetype plugin indent on   " Turn on filetype & plugin detection for indents 
 syntax on                   " Enable syntax highlighting
 
