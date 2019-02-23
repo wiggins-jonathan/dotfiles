@@ -24,8 +24,8 @@ set number              " Show line numbers on the left
 "================"
 
 set expandtab       " Convert tabs to white space
-set tabstop=4       " Width of TAB set to 4 spaces
-set shiftwidth=4    " Width of autoindent set to 4 spaces
+set tabstop=2       " Width of TAB set to 2 spaces
+set shiftwidth=2    " Width of autoindent set to 2 spaces
 
 "==================="
 "       Colors      "
