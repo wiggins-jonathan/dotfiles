@@ -23,9 +23,9 @@ font-1 = "Font Awesome 5 Brands:size=12:antialias=true;1"
 font-2 = "Font Awesome 5 Free Regular:size=12:antialias=true;1"
 font-3 = "Font Awesome 5 Free Solid:size=12:antialias=true;1"
 
-modules-left    = bspwm 
+modules-left    = bspwm
 modules-center  = mpd
-modules-right   = volume memory cpu wlan date 
+modules-right   = volume memory cpu wlan date
 module-margin   = 0
 fixed-center    = true
 
