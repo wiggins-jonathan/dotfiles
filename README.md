@@ -1,7 +1,7 @@
-Repository for Linux configuration files. Use [Git](https://git-scm.com/) & [GNU Stow](https://www.gnu.org/software/stow/) to 
-quickly deploy. 
+Repository for Linux configuration files.
+Use [Git](https://git-scm.com/) & [GNU Stow](https://www.gnu.org/software/stow/) to quickly deploy.
 
-# Dependencies
+## Dependencies
 * [X11](https://www.x.org/wiki/)
 * [bspwm](https://github.com/baskerville/bspwm)
 * [sxhkd](https://github.com/baskerville/sxhkd)
@@ -18,13 +18,14 @@ quickly deploy.
 * [neovim](https://github.com/neovim/neovim)
 * [dunst](https://dunst-project.org/)
 * [Font Awesome](https://fontawesome.com/)
+* [aerc](https://aerc-mail.org/)
 
-# How to Install
+## How to Install
 
-## 1. Clone repo
+### 1. Clone repo
 `$ git clone git@github.com:wiggins-jonathan/dotfiles.git`
 
-## 2. Run installer.sh 
-Installer.sh will use gnu stow to symlink all folders in the repo to $HOME.
+### 2. Run installer.sh
+Installer.sh will use stow to symlink all folders in the repo to $HOME.
 
 `$ ./install.sh`

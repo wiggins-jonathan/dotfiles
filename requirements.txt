@@ -14,3 +14,4 @@ compton
 neovim
 dunst
 tmux
+aerc-git

@@ -8,3 +8,6 @@ ncmpcpp/.config/ncmpcpp/error.log
 
 # zsh history file
 zsh/.zsh/zhistory
+
+# aerc
+aerc/.config/aerc/accounts.conf
