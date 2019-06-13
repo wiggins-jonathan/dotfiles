@@ -13,5 +13,6 @@ numlockx
 compton
 neovim
 dunst
+otf-font-awesome
 tmux
 aerc-git
