@@ -18,6 +18,7 @@ Use [Git](https://git-scm.com/) & [GNU Stow](https://www.gnu.org/software/stow/)
 * [neovim](https://github.com/neovim/neovim)
 * [dunst](https://dunst-project.org/)
 * [Font Awesome](https://fontawesome.com/)
+* [Tmux](gnu://github.com/tmux/tmux/wiki)
 * [aerc](https://aerc-mail.org/)
 
 ## How to Install
