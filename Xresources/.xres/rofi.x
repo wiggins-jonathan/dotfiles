@@ -8,9 +8,9 @@
 !       Interface       !
 !=======================!
 
-rofi.bw:		        1
-rofi.hide-scrollbar:	true
-rofi.terminal:		    termite
+rofi.bw:              1
+rofi.hide-scrollbar:  true
+rofi.terminal:        termite
 
 !====================!
 !       Colors       ! 
@@ -21,10 +21,10 @@ rofi.terminal:		    termite
 ! bg = background, bgalt = bg alternating row, hlbg = bg selected row
 ! fg = foreground, hlfg = fg selected row
 
-!			        bg	fg	bgalt	hlbg        hlfg
-rofi.color-normal:	bg,	fg,	bg,     magenta13,	fg
-rofi.color-urgent:	bg,	fg,	bg,     magenta13,	fg
-rofi.color-active:	bg,	fg,	bg,     magenta13,	fg
+!                   bg  fg  bgalt   hlbg        hlfg
+rofi.color-normal:  bg, fg, bg,     magenta13,  fg
+rofi.color-urgent:  bg, fg, bg,     magenta13,  fg
+rofi.color-active:  bg, fg, bg,     magenta13,  fg
 
-!			        bg	border		separator
-rofi.color-window:	bg,	blue12,		blue12
+!                   bg  border    separator
+rofi.color-window:  bg, blue12,   blue12
