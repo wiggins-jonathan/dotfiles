@@ -167,18 +167,7 @@ type    = internal/backlight
 card    = intel_backlight
 
 [module/cpu]
-type = internal/cpu
-
-interval = 2
-
-format-background = ${colors.background}
-format-padding    = 1
-
-format-prefix-foreground  = ${colors.red9}
-format-prefix             = 
-
-label             = %percentage:3%%
-label-foreground  = ${colors.foreground}
+include-file = $HOME/.config/polybar/modules/cpu
 
 [module/memory]
 include-file = $HOME/.config/polybar/modules/memory
