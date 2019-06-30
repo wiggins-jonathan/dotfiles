@@ -322,24 +322,7 @@ format-disconnected =
 ;label-disconnected-foreground = ${colors.foreground}
 
 [module/date]
-type = internal/date
-
-interval = 1
-
-format-background = ${colors.background}
-format-padding    = 1
-
-format-prefix               = 
-format-prefix-foreground    = ${colors.cyan14}
-format-prefix-padding-right = 1
-
-date      =
-date-alt  = %a %b %d |
-
-time      = %H:%M
-time-alt  = %H:%M:%S
-
-label = %date% %time%
+include-file = $HOME/.config/polybar/modules/date
 
 [module/volume]
 type = internal/alsa
