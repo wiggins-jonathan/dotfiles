@@ -1,3 +1,4 @@
+[bar/top_bar]
 monitor = VGA-1
 
 width   = 100%
@@ -33,3 +34,6 @@ tray-position   = right
 tray-padding    = 2
 
 enable-ipc = true
+
+; Set vim syntax highlighting
+; vim:ft=dosini
