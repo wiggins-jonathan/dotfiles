@@ -181,18 +181,7 @@ label             = %percentage:3%%
 label-foreground  = ${colors.foreground}
 
 [module/memory]
-type = internal/memory
-
-interval = 2
-
-format-background = ${colors.background}
-format-padding    = 1
-
-format-prefix-foreground  = ${colors.yellow11}
-format-prefix             = 
-
-label             = %percentage_used:3%%
-label-foreground  = ${colors.foreground}
+include-file = $HOME/.config/polybar/modules/memory
 
 [module/wlan]
 type = internal/network
