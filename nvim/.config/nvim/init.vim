@@ -20,7 +20,7 @@ set colorcolumn=80      " Highlight auto line break limit
 set number              " Show line numbers on the left 
 
 "================"
-"       Tabs     " 
+"       Tabs     "
 "================"
 
 set expandtab       " Convert tabs to white space
