@@ -55,20 +55,7 @@ format-foreground   = ${colors.foreground}
 format-padding      = 1
 
 [module/xkeyboard]
-type = internal/xkeyboard
-
-blacklist-0 = num lock
-
-format-background       = ${colors.background}
-format-foreground       = ${colors.foreground}
-format-padding          = 1
-format-prefix           = 
-format-prefix-padding   = 1
-
-label-layout                = %name%
-label-indicator-padding     = 1
-label-indicator-background  = ${colors.background}
-
+include-file = $HOME/.config/polybar/modules/xkeyboard
 [module/filesystem]
 type = internal/fs
 
