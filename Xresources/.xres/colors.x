@@ -24,7 +24,7 @@
 
 ! Blue
 #define blue4           #27ada8
-#define blue12          #03a9f4
+#define blue12          #0099ff
 
 ! Magenta
 #define magenta5        #cc52a3
