@@ -28,7 +28,7 @@
 
 ! Magenta
 #define magenta5        #cc52a3
-#define magenta13       #ff4aab
+#define magenta13       #ff3399
 
 ! Cyan
 #define cyan6           #88bbb9

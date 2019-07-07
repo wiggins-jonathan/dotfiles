@@ -32,7 +32,7 @@ filter_unmatched_urls = true
 #modify_other_keys = false
 
 [colors]
-cursor = #FF4AAB
+cursor = #ff3399
 #cursor_foreground = #dcdccc
 foreground = #FFFFFF
 foreground_bold = #FFFFFF
@@ -63,7 +63,7 @@ color12 = #0099ff
 
 # Magenta
 color5 = #CC52A3
-color13 = #FF4AAB
+color13 = #ff3399
 
 # Cyan
 color6 = #88BBB9
