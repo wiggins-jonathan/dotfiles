@@ -15,7 +15,7 @@ syntax on                   " Enable syntax highlighting
 "       Layout      "
 "==================="
 
-set textwidth=80        " Auto line break pastes after 80 characters
+set textwidth=100       " Auto line break pastes after 100 characters
 set colorcolumn=80      " Highlight auto line break limit
 set number              " Show line numbers on the left 
 
