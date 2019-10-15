@@ -1,17 +1,6 @@
 ! ~/.xres/rofi.x
 ! Config file for rofi. Site @ https://davedavenport.github.io/rofi/
 
-!rofi.modi:		    window, drun
-!rofi.combi-modi:	window, drun
-
-!=======================!
-!       Interface       !
-!=======================!
-
-rofi.bw:              1
-rofi.hide-scrollbar:  true
-rofi.terminal:        termite
-
 !====================!
 !       Colors       ! 
 !====================!

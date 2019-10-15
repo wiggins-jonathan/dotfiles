@@ -1,0 +1,20 @@
+configuration {
+  modi        : "window,drun";
+  combi-modi  : "window,drun";
+  terminal    : "termite";
+
+  display-drun  : "";
+  display-run   : "";
+  display-ssh   : "ssh";
+
+  drun-display-format : "{icon}{name}";
+
+  bw  : 1;  // border window thickness
+
+  show-icons      : true;
+  hide-scrollbar  : true;
+
+}
+
+// Set vim syntax highlighting
+// vim:ft=css
