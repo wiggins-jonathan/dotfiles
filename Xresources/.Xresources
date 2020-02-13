@@ -2,42 +2,41 @@
 
 ! Link variables for [Colors] & rofi
 #include ".xres/colors.x"
-#include ".xres/rofi.x"
 
-*foreground: 		fg
-*background: 		bg
-*cursorColor:	  	_cursorColor
-*colorUL:    	  	_colorUL
-*highlightColor:	white15
+*foreground:      fg
+*background:      bg
+*cursorColor:     _cursorColor
+*colorUL:         _colorUL
+*highlightColor:  white15
 
 ! Black
-*color0:	       	black0
-*color8:	       	black8
+*color0: black0
+*color8: black8
 
 ! Red
-*color1:       		red1
-*color9:       		red9
+*color1: red1
+*color9: red9
 
 ! Green
-*color2:       		green2
-*color10:      		green10
+*color2:  green2
+*color10: green10
 
 ! Yellow
-*color3:       		yellow3
-*color11:      		yellow11
+*color3:  yellow3
+*color11: yellow11
 
 ! Blue
-*color4:       		blue4
-*color12:      		blue12
+*color4:  blue4
+*color12: blue12
 
 ! Magenta
-*color5:       		magenta5
-*color13:      		magenta13
+*color5:  magenta5
+*color13: magenta13
 
 ! Cyan
-*color6:       		cyan6
-*color14:      		cyan14
+*color6:  cyan6
+*color14: cyan14
 
 ! White
-*color7:	       	white7
-*color15:	      	white15
+*color7:  white7
+*color15: white15
