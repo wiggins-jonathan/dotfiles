@@ -9,7 +9,11 @@
 #                                                           #
 #===========================================================#
 
+# Get absolute path of this script & change to that dir.
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $dir
+
 for directories in `ls -d */`;
 do
-    ( stow $directories )
+  ( stow "$directories" )
 done
