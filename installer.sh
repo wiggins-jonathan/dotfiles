@@ -13,7 +13,10 @@
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $dir
 
-for directories in `ls -d */`;
-do
-  ( stow "$directories" )
+# Loop through all directories in the scripts path, checks if they are indeed
+# directories, & stows them
+for directory in */; do
+  if [[ -d "$directory" ]]; then
+    ( stow "$directory" )
+  fi
 done
