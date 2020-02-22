@@ -1,5 +1,17 @@
-# Activate zsh-syntax-highlighting. See github.com/zsh-users/zsh-syntax-highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Activate zsh-syntax-highlighting for Ubuntu or Arch.
+# See github.com/zsh-users/zsh-syntax-highlighting
+if [[ -f /etc/os-release ]]; then
+  source /etc/os-release
+  OS=$NAME
+
+  if [[ "$OS" == "Arch Linux" ]]; then
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  elif [[ "$OS" == "Ubuntu" ]]; then
+    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  else
+    echo "Can't find zsh-syntax-highlighting file for this distro."
+  fi
+fi
 
 # Add color to man
 man() {
