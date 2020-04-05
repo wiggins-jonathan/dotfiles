@@ -9,7 +9,7 @@ format-padding    = 1
 format-prefix-foreground  = ${colors.yellow11}
 format-prefix             = 
 
-label             = %percentage_used:3%%
+label             = %percentage_used:3%% |
 label-foreground  = ${colors.foreground}
 
 ; Set vim syntax highlighting

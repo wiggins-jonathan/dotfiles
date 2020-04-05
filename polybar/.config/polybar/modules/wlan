@@ -13,8 +13,8 @@ format-connected-prefix-foreground  = ${colors.green2}
 format-connected-prefix-padding     = 1
 format-connected-prefix             = 
 
+label-connected             = %essid% |
 label-connected-foreground  = ${colors.foreground}
-label-connected             = %essid%
 
 ramp-signal-foreground  = ${colors.foreground}
 ramp-signal-0           = 1
@@ -31,8 +31,8 @@ format-disconnected-prefix-foreground = ${colors.red9}
 format-disconnected-prefix-padding    = 1
 format-disconnected-prefix            = 
 
+label-disconnected            = %ifname% disconnected |
 label-disconnected-foreground = ${colors.red9}
-label-disconnected            = %ifname% disconnected
 
 ; Set vim syntax highlighting
 ; vim:ft=dosini
