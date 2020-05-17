@@ -10,7 +10,7 @@ mpd
 ncmpcpp
 xbanish
 numlockx
-compton
+picom
 neovim
 dunst
 otf-font-awesome
