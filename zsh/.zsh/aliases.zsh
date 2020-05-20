@@ -13,7 +13,7 @@ alias diff='diff --color=auto'
 alias ip='ip -c'
 alias ssh="TERM=termite ssh"
 alias vi=nvim
-alias tmux='tmux -f ~/.config/tmux/tmux.conf'
+alias tmux='tmux -f $HOME/.config/tmux/tmux.conf'
 
 # cd & ls together forever
 cdl() {
