@@ -10,37 +10,36 @@ sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
 if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
+  xrdb -merge $sysresources
 fi
 
 if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
+  xmodmap $sysmodmap
 fi
 
 if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
+  xrdb -merge "$userresources"
 fi
 
 if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
+  xmodmap "$usermodmap"
 fi
 
-if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/?*.sh; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
 fi
 
 #=======================#
 #       Background      #
 #=======================#
 
-xrandr --output VGA-1 --mode 1920x1080		# Set resolution 
+xrandr --output VGA-1 --mode 1920x1080  # Set resolution
 
-# Uncomment to set static desktop background 
-# Feh script points to background file.
- ~/.fehbg &
+# .fehbg script points to an image file to be used for background wallpaper.
+$HOME/.fehbg &
 
 # Use gifview wrapped with xwinwrap to draw an animated file to the root window (desktop background). 
 # You must use xwinwrap when using compton as it draws over the root window. 
@@ -51,7 +50,7 @@ xrandr --output VGA-1 --mode 1920x1080		# Set resolution
 #       Programs        #
 #=======================#
 
-numlockx &  # Set numlock key on
+#numlockx &  # Set numlock key on
 xbanish &   # Hide mouse pointer when typing
 mpd &       # Load mpd server
 picom -b &  # Start picom
