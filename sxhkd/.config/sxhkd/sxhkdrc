@@ -21,11 +21,11 @@ super + Escape
 
 # Take screenshot of entire desktop & save it in Downloads folder
 Print
-  scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/Downloads'
+  scrot -q 100 '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/downloads'
 
 # Take screenshot of focused window & save it in Downloads folder
 ctrl + Print
-  scrot -q 100 -u '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/Downloads'
+  scrot -q 100 -u '%Y-%m-%d_%T_$wx$h.png' -e 'mv $f ~/downloads'
 
 #===========#
 #   Volume  #
