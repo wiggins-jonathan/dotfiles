@@ -1,4 +1,6 @@
 xorg-server
+xorg-xrandr
+xorg-xinit
 bspwm
 sxhkd
 zsh
