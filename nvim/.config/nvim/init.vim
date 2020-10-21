@@ -61,12 +61,19 @@ autocmd BufWritePre * %s/\s\+$//e " Auto delete trailing whitespace on save
 " Language specific configurations
 autocmd filetype markdown setlocal spell spelllang=en_us
 
+autocmd filetype python,go  call AutoCloseCodePairs()
+autocmd filetype python,go  call FourSpaces()
+autocmd filetype go         :retab " Auto convert tabs to spaces on file open
+
+function FourSpaces()
+  setlocal tabstop=4
+  setlocal shiftwidth=4
+  setlocal softtabstop=4
+endfunction
+
 " If line ends in parenthesis, bracket, or curly brace, indent & close
-autocmd filetype python,go setlocal
-  \ tabstop=4
-  \ shiftwidth=4
-  \ softtabstop=4
-  \ | inoremap {<CR> {<CR>}<ESC>O
-  \ | inoremap (<CR> (<CR>)<ESC>O
-  \ | inoremap [<CR> [<CR>]<ESC>O
-  \ | :retab " Auto convert tabs to spaces on file open
+function AutoCloseCodePairs()
+  inoremap {<CR> {<CR>}<ESC>O
+  inoremap (<CR> (<CR>)<ESC>O
+  inoremap [<CR> [<CR>]<ESC>O
+endfunction
