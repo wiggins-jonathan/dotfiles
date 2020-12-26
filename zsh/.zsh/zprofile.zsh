@@ -1,6 +1,7 @@
-# Load startx on boot
-if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
-	exec startx
+# Load sway on login if tty1
+if [ "$(tty)" = "/dev/tty1" ]; then
+  exec sway
 fi
 
-export PATH=$PATH:/home/jonathan/.go/bin
+export PATH=$PATH:$HOME/.go/bin
+export MOZ_ENABLE_WAYLAND=1 # required for Firefox
