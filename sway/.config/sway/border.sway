@@ -1,0 +1,18 @@
+default_border          pixel 3
+default_floating_border pixel 3
+
+# No borders if < 1 window
+smart_borders on
+
+# colors
+set $black    #242424
+set $red      #be0e50
+set $green    #50ff4a
+set $yellow   #ccfga3
+set $blue     #0099ff
+set $magenta  #ff3399
+set $cyan     #5ea8a9
+set $white    #ffffff
+
+# <class>       <border>  <background>  <text>  <indicator> <child_border>
+client.focused  $white     $blue        $white
