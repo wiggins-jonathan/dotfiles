@@ -1,0 +1,16 @@
+# Example config located @ /usr/share/doc/alacritty/example/alacritty.yml
+
+# These configuration files will be loaded in order,
+# replacing values in files loaded earlier with those loaded later in the chain.
+# This file itself will always be loaded last.
+import:
+  - /home/jonathan/.config/alacritty/colors.yml
+
+window:
+  decorations: none
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+  # Scrolling distance multiplier.
+  multiplier: 3
