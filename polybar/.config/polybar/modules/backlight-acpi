@@ -1,7 +1,0 @@
-[module/backlight-acpi]
-inherit = module/xbacklight
-type    = internal/backlight
-card    = intel_backlight
-
-; Set vim syntax highlighting
-; vim:ft=dosini
