@@ -23,6 +23,10 @@ bindsym $mod+space    exec $menu
 bindsym $mod+Shift+q  kill
 bindsym $mod+Escape   reload
 
+# Dismiss last mako notification
+bindsym $mod+n        exec makoctl dismiss
+bindsym $mod+Shift+n  exec makoctl dismiss -a
+
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
 # Despite the name, also works for non-floating windows.
