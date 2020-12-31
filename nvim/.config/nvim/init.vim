@@ -19,7 +19,7 @@ set background=dark
 hi LineNr ctermbg=0 ctermfg=grey        " Set line numbers to grey
 hi Search cterm=reverse                 " Reverse color on search terms
 hi Comment cterm=reverse ctermfg=grey   " Set comments to grey & reverse
-hi ColorColumn ctermbg=0                " Set the 80 character line to grey
+hi ColorColumn ctermbg=8                " Set the 80 character line to dark grey
 hi Statusline cterm=none ctermbg=0      " Set statusline bg to black
 
 " Search
@@ -44,6 +44,7 @@ set statusline+=%y\     " Show filetype
 
 " Right-justified text
 set statusline+=%=      " Right justify text
+set statusline+=%c\     " Show column number at cursor
 set statusline+=%p%%\   " Show percentage of lines through file
 
 " File Search
