@@ -1,0 +1,62 @@
+{
+  "layer"   : "top",
+  //"height"  : 30,
+
+  "modules-left"    : ["sway/workspaces", "sway/mode"],
+  "modules-center"  : [],
+  "modules-right"   : [
+    "custom/weather",
+    "pulseaudio",
+    "memory",
+    "cpu",
+    "temperature",
+    "network",
+    "clock"
+  ],
+
+  // Modules
+  // oft-font-awesome is required for icons
+  "sway/mode" : { "tooltip": false },
+
+  "custom/weather" : {
+    "format"    : "{}",
+    "exec"      : "curl -s 'wttr.in?format=1&m' 2> /dev/null",
+    "interval"  : 60,
+    "tooltip"   : false
+  },
+  "pulseaudio"  : {
+    "format-icons"      : { "default" : ["", ""] },
+    // Variables folowed by :n set a fixed width
+    "format"            : "{icon} {volume:3}%",
+    "format-bluetooth"  : " {volume:3}%",
+    "format-muted"      : " Mute",
+    "scroll-step"       : 5.0,
+    "tooltip"           : false
+  },
+
+  "cpu"         : { "format" : " {usage:3}%",      "interval" : 5 },
+  "memory"      : { "format" : " {percentage:3}%", "interval" : 5 },
+  "temperature" : {
+    "format-icons"        : ["", "", "", "", ""],
+    "format"              : "{icon} {temperatureC}°C",
+    "critical-threshold"  : 90,
+    "interval"            : 5
+  },
+
+  "network"     : {
+    "format-wifi"         : " {essid}  {signalStrength}%",
+    "format-alt"          : " {bandwidthUpBits}  {bandwidthDownBits}",
+    "format-disconnected" : "{ifname} DISCONNECTED!",
+    "format-disabled"     : "{ifname} DISABLED!",
+    "tooltip"             : false
+  },
+
+  "clock"       : {
+    "format"          : " {:%H:%M}",
+    "format-alt"      : "{:%a %b %d | %H:%M}",
+    "tooltip-format"  : "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  }
+}
+
+// Set vim syntax highlighting
+// vim:ft=json
