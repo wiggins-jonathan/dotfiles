@@ -6,6 +6,7 @@ syntax on                 " Enable syntax highlighting
 set textwidth=100   " Auto line break pastes after 100 characters
 set colorcolumn=80  " Highlight auto line break limit
 set number          " Show line numbers on the left
+set cursorline      " Highlight the line number the cursor is currently on
 
 "Tabs
 set expandtab     " Hitting tab inserts spaces instead
@@ -21,6 +22,9 @@ hi Search cterm=reverse                 " Reverse color on search terms
 hi Comment cterm=reverse ctermfg=grey   " Set comments to grey & reverse
 hi ColorColumn ctermbg=8                " Set the 80 character line to dark grey
 hi Statusline cterm=none ctermbg=0      " Set statusline bg to black
+hi CursorLine cterm=none ctermbg=0      " Remove styling for cursorline
+" Add styling for line number cursor is currently on
+hi CursorLineNr cterm=bold ctermfg=white
 
 " Search
 set ignorecase                      " Ignore case...
