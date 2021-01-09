@@ -1,6 +1,7 @@
 set nocompatible          " Turn off backwards compatibility for vi
 filetype plugin indent on " Turn on filetype & plugin detection for indents
 syntax on                 " Enable syntax highlighting
+colorscheme theme         " Define theme from $HOME/.config/nvim/colors/theme.vim
 
 " Layout
 set textwidth=100   " Auto line break pastes after 100 characters
@@ -14,29 +15,19 @@ set tabstop=2     " Width of TAB set to 2 spaces in insert mode
 set softtabstop=2 " Width of TAB set to 2 spaces in editing modes
 set shiftwidth=2  " Width of autoindent set to 2 spaces
 
-" Colors
-" Run :hi or :so $VIMRUNTIME/syntax/hitest.vim for color & group info
-set background=dark
-hi LineNr ctermbg=0 ctermfg=grey        " Set line numbers to grey
-hi Search cterm=reverse                 " Reverse color on search terms
-hi Comment cterm=reverse ctermfg=grey   " Set comments to grey & reverse
-hi ColorColumn ctermbg=8                " Set the 80 character line to dark grey
-hi Statusline cterm=none ctermbg=0      " Set statusline bg to black
-hi CursorLine cterm=none ctermbg=0      " Remove styling for cursorline
-" Add styling for line number cursor is currently on
-hi CursorLineNr cterm=bold ctermfg=white
-
 " Search
 set ignorecase                      " Ignore case...
 set smartcase                       " Unless upper case is used
-nnoremap <esc> :noh<return><esc>    " Press esc to clear search highlighting
+" Press esc to clear search highlighting
+nnoremap <esc> :noh<return><esc>
 
 " Folding
 set foldmethod=indent   " Fold on indent...
 set foldlevel=99        " For up to 99 indents
 set foldlevelstart=10   " Open all folds less than 10 on file startup
 set foldnestmax=10      " Don't nest lines with a fold amount greater than 10
-nnoremap <space> za     " Use space to unfold instead of za
+" Use space to unfold instead of za
+nnoremap <space> za
 
 " Statusline
 
