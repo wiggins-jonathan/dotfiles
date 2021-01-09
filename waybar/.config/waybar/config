@@ -15,7 +15,7 @@
   ],
 
   // Modules
-  // oft-font-awesome is required for icons
+  // otf-font-awesome is required for icons
   "sway/mode" : { "tooltip": false },
 
   "custom/weather" : {
@@ -45,7 +45,7 @@
 
   "network"     : {
     "format-wifi"         : " {essid}  {signalStrength}%",
-    "format-alt"          : " {bandwidthUpBits}  {bandwidthDownBits}",
+    "format-alt"          : " {bandwidthUpBits}  {bandwidthDownBits}",
     "format-disconnected" : "{ifname} DISCONNECTED!",
     "format-disabled"     : "{ifname} DISABLED!",
     "tooltip"             : false
