@@ -1,24 +1,18 @@
 Repository for Linux configuration files.
-Use [Git](https://git-scm.com/) & [GNU Stow](https://www.gnu.org/software/stow/) to quickly deploy.
 
 ## Dependencies
-* [X11](https://www.x.org/wiki/)
-* [bspwm](https://github.com/baskerville/bspwm)
-* [sxhkd](https://github.com/baskerville/sxhkd)
+* [sway](https://swaywm.org/)
 * [zsh](https://www.zsh.org/)
-* [termite](https://github.com/thestinger/termite)
-* [rofi](https://github.com/DaveDavenport/rofi)
-* [polybar](https://github.com/jaagr/polybar)
+* [alacritty](https://github.com/alacritty/alacritty)
+* [wofi](https://hg.sr.ht/~scoopta/wofi)
+* [waybar](https://github.com/Alexays/Waybar/)
 * [neofetch](https://github.com/dylanaraps/neofetch)
 * [mpd](https://www.musicpd.org/)
 * [ncmpcpp](http://rybczak.net/ncmpcpp/)
-* [xbanish](https://github.com/jcs/xbanish)
-* [numlockx](https://github.com/rg3/numlockx)
-* [picom](https://github.com/yshui/picom)
 * [neovim](https://github.com/neovim/neovim)
-* [dunst](https://dunst-project.org/)
+* [mako](https://wayland.emersion.fr/mako/)
 * [Font Awesome](https://fontawesome.com/)
-* [Tmux](gnu://github.com/tmux/tmux/wiki)
+* [tmux](https://github.com/tmux/tmux/wiki)
 * [aerc](https://aerc-mail.org/)
 
 ## How to Install
