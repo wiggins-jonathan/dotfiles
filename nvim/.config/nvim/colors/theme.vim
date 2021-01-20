@@ -13,21 +13,22 @@ hi Search       cterm=none ctermbg=darkRed  ctermfg=white
 hi ColorColumn  cterm=none ctermbg=darkGrey
 hi Statusline   cterm=none ctermbg=black
 hi Visual       cterm=bold
-hi CursorLine   cterm=none ctermbg=black    " Remove styling for cursorline
+" Remove styling for cursorline
+hi CursorLine   cterm=none ctermbg=black
 " Add styling for the line number that the cursor is currently on
 hi CursorLineNr cterm=bold ctermfg=white
 
 " General syntax highlighting
 hi Comment    cterm=reverse   ctermfg=grey
 hi underline  cterm=underline ctermfg=darkBlue
+hi Special    cterm=bold      ctermfg=darkMagenta
 
 hi Statement  cterm=none  ctermfg=darkGreen
 hi Constant   cterm=none  ctermfg=magenta
 hi Type       cterm=none  ctermfg=white
-hi PreProc    cterm=none  ctermfg=darkMagenta
+hi PreProc    cterm=none  ctermfg=blue
 hi Identifier cterm=none  ctermfg=darkBlue
-hi Special    cterm=bold  ctermfg=darkMagenta
-
+hi Operator   cterm=none  ctermfg=darkMagenta
 
 " Identify the syntax highlighting group used under the cursor with F10
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
@@ -36,10 +37,10 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 
 " <num> <name>
 " 0     Black
-" 1     DarkBlue
+" 1     DarkRed
 " 2     DarkGreen
 " 3     DarkCyan
-" 4     DarkRed
+" 4     DarkBlue
 " 5     DarkMagenta
 " 6     Brown, DarkYellow
 " 7     LightGray, LightGrey, Gray, Grey
