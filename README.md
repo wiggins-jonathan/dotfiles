@@ -1,13 +1,20 @@
-Special repository for Linux configuration files used on raspberry pi.
-Use [Git](https://git-scm.com/) & [GNU Stow](https://www.gnu.org/software/stow/) to quickly deploy.
+Repository for Linux configuration files.
 
 ## Dependencies
+* [sway](https://swaywm.org/)
 * [zsh](https://www.zsh.org/)
-* [termite](https://github.com/thestinger/termite)
+* [alacritty](https://github.com/alacritty/alacritty)
+* [wofi](https://hg.sr.ht/~scoopta/wofi)
+* [waybar](https://github.com/Alexays/Waybar/)
 * [neofetch](https://github.com/dylanaraps/neofetch)
-* [numlockx](https://github.com/rg3/numlockx)
+* [mpd](https://www.musicpd.org/)
+* [ncmpcpp](http://rybczak.net/ncmpcpp/)
 * [neovim](https://github.com/neovim/neovim)
-* [Tmux](gnu://github.com/tmux/tmux/wiki)
+* [mako](https://wayland.emersion.fr/mako/)
+* [Font Awesome](https://fontawesome.com/)
+* [tmux](https://github.com/tmux/tmux/wiki)
+* [aerc](https://aerc-mail.org/)
+>>>>>>> origin/master
 
 ## How to Install
 

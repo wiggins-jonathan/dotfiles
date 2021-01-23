@@ -1,0 +1,22 @@
+draw_bold_text_with_bright_colors: false
+
+colors:
+  primary:
+    background: '#242424'
+    foreground: '#ffffff'
+  cursor:
+    text  : '#ff3399'
+    cursor: '#0099ff'
+  normal:
+    black   : '#242424'
+    red     : '#be0e50'
+    green   : '#50ff4a'
+    yellow  : '#cc5fa3'
+    blue    : '#0099ff'
+    magenta : '#ff3399'
+    cyan    : '#5ea8a9'
+    white   : '#ffffff'
+
+  vi_mode_cursor:
+    text  : '#0099ff'
+    cursor: '#ff3399'

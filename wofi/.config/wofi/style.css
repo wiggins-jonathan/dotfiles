@@ -1,0 +1,37 @@
+@define-color black   #242424;
+@define-color red     #be0e50;
+@define-color green   #50ff4a;
+@define-color yellow  #ccfga3;
+@define-color blue    #0099ff;
+@define-color magenta #ff3399;
+@define-color cyan    #5ea8a9;
+@define-color white   #ffffff;
+
+#window {
+  opacity: 0.9;
+  background-color: @black;
+  border: 3px solid @blue;
+}
+
+#text {
+  color: @white;
+  margin-left: 2em;
+}
+
+#text:selected {
+  color: @white;
+  background-color: @magenta;
+  font-weight: bold;
+}
+
+#input {
+  color: @white;
+  background-color: @black;
+  border: 3px solid @blue;
+  border-bottom: 2px solid @blue;
+  border-radius: 0;
+}
+
+#entry:selected {
+  background-color: @blue;
+}

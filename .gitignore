@@ -11,3 +11,6 @@ zsh/.zsh/zhistory
 
 # aerc
 aerc/.config/aerc/accounts.conf
+
+# nvim
+nvim/.config/nvim/.netrwhist

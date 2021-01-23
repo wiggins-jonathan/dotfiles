@@ -1,5 +1,12 @@
+sway
 zsh
-termite
+alacritty
+wofi
+waybar
 neofetch
+mpd
+ncmpcpp
 neovim
+mako
+otf-font-awesome
 tmux
