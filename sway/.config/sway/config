@@ -20,8 +20,10 @@ output * bg $HOME/pictures/wallpaper/Sumi-e.jpg fill #000000
 #     natural_scroll enabled
 #     middle_emulation enabled
 # }
-# Hide cursor if no movement for 10 seconds
+
+# Hide cursor if no movement for 10 seconds & when typing on the keyboard
 seat * hide_cursor 10000
+seat * hide_cursor when-typing enable
 
 ### Status Bar:
 # Read `man 5 sway-bar` for more information about this section.
