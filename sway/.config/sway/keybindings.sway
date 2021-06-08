@@ -127,6 +127,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Volume
-bindsym $mod+minus  exec pactl set-sink-volume  @DEFAULT_SINK@ -5%
-bindsym $mod+equal  exec pactl set-sink-volume  @DEFAULT_SINK@ +5%
-bindsym $mod+m      exec pactl set-sink-mute    @DEFAULT_SINK@ toggle
+bindsym $mod+minus  exec volume.sh down
+bindsym $mod+equal  exec volume.sh up
+bindsym $mod+m      exec volume.sh mute
