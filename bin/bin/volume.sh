@@ -52,5 +52,5 @@ volumeUp() {
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
-  main $1
+  main "$1"
 fi
