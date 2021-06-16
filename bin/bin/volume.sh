@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 currentVolume=$(pamixer --get-volume)
+if [[ $currentVolume -lt 33 ]]; then
+  volumeIcon=
+elif [[ $currentVolume -ge 33 && $currentVolume -lt 66 ]]; then
+  volumeIcon=
+elif [[ $currentVolume -ge 66 ]]; then
+  volumeIcon=
+fi
 
 main() {
   if ! command -v pamixer; then
@@ -27,21 +34,21 @@ mute() {
 
   pactl set-sink-mute @DEFAULT_SINK@ toggle
   makoctl dismiss -g
-  notify-send -c volume  "Unmute :: $currentVolume%"
+  notify-send -c volume $volumeIcon "Unmute :: $currentVolume%"
 }
 
 volumeDown() {
   # Needed for displaying when volume is already at 0
   if [[ $currentVolume -le 0 ]]; then
     makoctl dismiss -g
-    notify-send -c volume  "$currentVolume%"
+    notify-send -c volume  "$currentVolume%"
     exit 0
   fi
 
   pactl set-sink-volume @DEFAULT_SINK@ -5%
   makoctl dismiss -g
   currentVolume=$(( currentVolume - 5 ))
-  notify-send -c volume  "$currentVolume%"
+  notify-send -c volume $volumeIcon "$currentVolume%"
 }
 
 volumeUp() {
