@@ -40,15 +40,15 @@ volumeDown() {
 
   pactl set-sink-volume @DEFAULT_SINK@ -5%
   makoctl dismiss -g
-  currentVolume=$(( $currentVolume - 5 ))
+  currentVolume=$(( currentVolume - 5 ))
   notify-send -c volume  "$currentVolume%"
 }
 
 volumeUp() {
   pactl set-sink-volume @DEFAULT_SINK@ +5%
   makoctl dismiss -g
-  currentVolume=$(( $currentVolume + 5 ))
-  notify-send -c volume  "$currentVolume%"
+  currentVolume=$(( currentVolume + 5 ))
+  notify-send -c volume $volumeIcon "$currentVolume%"
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
