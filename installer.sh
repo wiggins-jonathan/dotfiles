@@ -5,7 +5,7 @@ dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $dir
 
 # Loop through all directories in the script's path, checks if they are
-# directories, & stows them
+# directories, & stows them. This ignores hidden directories.
 for directory in */; do
   if [[ -d "$directory" ]]; then
     ( stow "$directory" )
