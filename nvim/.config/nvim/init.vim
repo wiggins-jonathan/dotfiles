@@ -16,8 +16,8 @@ set softtabstop=2 " Width of TAB set to 2 spaces in editing modes
 set shiftwidth=2  " Width of autoindent set to 2 spaces
 
 " Search
-set ignorecase                      " Ignore case...
-set smartcase                       " Unless upper case is used
+set ignorecase  " Ignore case...
+set smartcase   " Unless upper case is used
 " Press esc to clear search highlighting
 nnoremap <esc> :noh<return><esc>
 
@@ -43,8 +43,8 @@ set statusline+=%c\     " Show column number at cursor
 set statusline+=%p%%\   " Show percentage of lines through file
 
 " File Search
-set path+=**            " Search into subfolders of current path using :find
-set wildmenu            " Tab iterates through matches using :find
+set path+=**  " Search into subfolders of current path using :find
+set wildmenu  " Tab iterates through matches using :find
 
  " Disable automatic commenting on newline
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
