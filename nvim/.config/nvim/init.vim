@@ -57,12 +57,14 @@ autocmd BufWritePre * %s/\s\+$//e " Auto delete trailing whitespace on save
 " Language specific configurations
 autocmd filetype markdown setlocal spell spelllang=en_us
 
-" Detect beancount files
-au BufRead,BufNewFile *.bean set filetype=beancount
+" Detect files & set syntax
+autocmd BufRead,BufNewFile  *.bean    set filetype=beancount
+autocmd BufReadPost         *.svelte  set syntax=html
 
-autocmd filetype python,go,sh,css call AutoCloseCodePairs()
-autocmd filetype python,go        call FourSpaces()
-autocmd filetype go               :retab " Auto convert tabs to spaces on file open
+" Deal with coding languages
+autocmd filetype python,go,sh,css,svelte call AutoCloseCodePairs()
+autocmd filetype python,go call FourSpaces()
+autocmd filetype go :retab " Auto convert tabs to spaces on file open
 
 function FourSpaces()
   setlocal tabstop=4
