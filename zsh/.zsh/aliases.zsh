@@ -6,6 +6,7 @@ alias vi=nvim
 alias tmux='tmux -f $HOME/.config/tmux/tmux.conf'
 alias venv='source .venv/bin/activate'
 alias tf='terraform'
+alias ap='ansible-playbook'
 
 # cd & ls together forever
 cdl() {
