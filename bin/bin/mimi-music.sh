@@ -26,6 +26,6 @@ songs=(
 
 for i in "${songs[@]}"; do
   echo "Downloading & extracting $i..."
-  $cmd $i
+  "$cmd" "$i"
   echo "Done."
 done
