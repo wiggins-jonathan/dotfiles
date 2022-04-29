@@ -130,3 +130,8 @@ bindsym $mod+r mode "resize"
 bindsym $mod+minus  exec volume.sh down
 bindsym $mod+equal  exec volume.sh up
 bindsym $mod+m      exec volume.sh mute
+
+# Screenshots
+bindsym Print             exec screenshot.sh fullScreen
+bindsym $mod+Print        exec screenshot.sh selected
+bindsym $mod+Shift+Print  exec screenshot.sh focused
