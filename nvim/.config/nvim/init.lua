@@ -70,6 +70,13 @@ autocmd('filetype', {
   end
 })
 
+-- add newline after the first space after 80 chars
+vim.api.nvim_create_user_command(
+  'Newline',
+  '%s/\\v(.{80}.{-}\\s)/\\1\\r/g',
+  {}
+)
+
 -- statusline
 local filename      = '%t'
 local filetype      = '%y'
