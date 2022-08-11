@@ -52,7 +52,7 @@ autocmd('BufWritePre', { pattern = '*', command = '%s/\\s\\+$//e' })
 
 -- if line ends in {, (, [, indent & close
 autocmd('filetype', {
-  pattern   = 'python,go,sh,css,svelte,caddyfile,terraform,lua',
+  pattern   = 'python,go,sh,css,svelte,caddyfile,terraform,lua,hcl',
   callback  = function()
     map('i', '{<CR>', '{<CR>}<ESC>O')
     map('i', '(<CR>', '(<CR>)<ESC>O')
