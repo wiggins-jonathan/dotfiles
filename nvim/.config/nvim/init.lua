@@ -77,6 +77,9 @@ vim.api.nvim_create_user_command(
   {}
 )
 
+-- auto `go fmt` when exiting go files
+autocmd('BufWinLeave', { pattern = '*.go', command = '! go fmt % > /dev/null' })
+
 -- statusline
 local filename      = '%t'
 local filetype      = '%y'
