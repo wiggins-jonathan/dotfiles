@@ -18,3 +18,8 @@ scrolling:
 # Maintain compatability with some older machines through ssh
 env:
   TERM: xterm-256color
+
+bell:
+  animation: EaseOutExpo
+  duration: 5
+  color: '#be0e50'
