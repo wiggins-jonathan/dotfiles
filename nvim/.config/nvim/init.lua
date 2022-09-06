@@ -28,6 +28,8 @@ go.foldlevelstart = 10        -- open all folds less than 10 on file open
 wo.foldnestmax    = 10        -- don't nest lines with fold amount > 10
 map('n', '<space>', 'za')     -- use space to unfold instead of za
 
+go.undofile = true  -- use an undo file saved in $XDG_STATE_HOME/nvim/undo
+
 -- filetype detection
 vim.g.do_filetype_lua = 1
 local add = vim.filetype.add
