@@ -6,6 +6,7 @@
   "modules-center"  : [],
   "modules-right"   : [
     "custom/weather",
+    "bluetooth",
     "pulseaudio",
     "memory",
     "cpu",
@@ -18,17 +19,25 @@
   // otf-font-awesome is required for icons
   "sway/mode" : { "tooltip": false },
 
+  "bluetooth" : {
+    "format-on" : " {status}",
+    "format-off" : "",
+    "format-connected" : " {device_alias}",
+    "format-connected-battery" : " {device_alias} {device_battery_percentage}"
+  },
+
   "custom/weather" : {
     "format"    : "{}",
     "exec"      : "curl -s 'wttr.in?format=1&m' 2> /dev/null",
     "interval"  : 60,
     "tooltip"   : false
   },
+
   "pulseaudio"  : {
     "format-icons"      : { "default" : ["", ""] },
     // Variables folowed by :n set a fixed width
     "format"            : "{icon} {volume:3}%",
-    "format-bluetooth"  : " {volume:3}%",
+    "format-bluetooth"  : " {volume:3}%",
     "format-muted"      : " Mute",
     "scroll-step"       : 5.0,
     "tooltip"           : false
