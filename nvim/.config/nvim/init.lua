@@ -82,6 +82,9 @@ vim.api.nvim_create_user_command(
 -- auto `go fmt` when exiting go files
 autocmd('BufWinLeave', { pattern = '*.go', command = '! go fmt % > /dev/null' })
 
+-- fix yaml comment formatting
+autocmd('filetype', { pattern = 'yaml', command = 'setlocal indentkeys-=0#' })
+
 -- statusline
 local filename      = '%t'
 local filetype      = '%y'
