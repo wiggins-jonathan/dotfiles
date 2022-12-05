@@ -93,8 +93,7 @@ label:focus {
 #temperature,
 #network,
 #clock,
-#tray,
-#mpd {
+#tray {
   background-color  : @black;
   color             : @white;
   padding           : 0 10px;
@@ -129,23 +128,6 @@ label:focus {
 #network.disabled,
 #network.disconnected {
   background-color: @red;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
 }
 
 #language {
