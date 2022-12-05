@@ -18,13 +18,6 @@
   // otf-font-awesome is required for icons
   "sway/mode" : { "tooltip": false },
 
-  "bluetooth" : {
-    "format-on" : " {status}",
-    "format-off" : "",
-    "format-connected" : " {device_alias}",
-    "format-connected-battery" : " {device_alias} {device_battery_percentage}"
-  },
-
   "custom/weather" : {
     "format"    : "{}",
     "exec"      : "curl -s 'wttr.in?format=1&m' 2> /dev/null",
@@ -32,36 +25,51 @@
     "tooltip"   : false
   },
 
+  "bluetooth" : {
+    "format-on" : "<span color='#0099ff'></span> {status}",
+    "format-off" : "",
+    "format-connected" : " {device_alias}",
+    "format-connected-battery" : " {device_alias} {device_battery_percentage}"
+  },
+
   "pulseaudio"  : {
     "format-icons"      : { "default" : ["", ""] },
     // Variables folowed by :n set a fixed width
-    "format"            : "{icon} {volume:3}%",
-    "format-bluetooth"  : " {volume:3}%",
+    "format"            : "<span color='#50ff4a'>{icon}</span> {volume:3}%",
+    "format-bluetooth"  : "<span color='#0099ff'></span> {volume:3}%",
     "format-muted"      : " Mute",
     "scroll-step"       : 5.0,
     "tooltip"           : false,
     "on-click"          : "volume.sh mute"
   },
 
-  "cpu"         : { "format" : " {usage:3}%",      "interval" : 5 },
-  "memory"      : { "format" : " {percentage:3}%", "interval" : 5 },
+  "memory"      : {
+    "format" : "<span color='#5ea8a9'></span> {percentage:3}%",
+    "interval" : 5
+  },
+
+  "cpu"         : {
+    "format" : "<span color='#ffff00'></span> {usage:3}%",
+    "interval" : 5
+  },
+
   "temperature" : {
     "format-icons"        : ["", "", "", "", ""],
-    "format"              : "{icon} {temperatureC}°C",
+    "format"              : "<span color='#ff3399'>{icon}</span> {temperatureC}°C",
     "critical-threshold"  : 90,
     "interval"            : 5
   },
 
   "network"     : {
-    "format-wifi"         : " {essid}  {signalStrength}%",
-    "format-alt"          : " {bandwidthUpBits}  {bandwidthDownBits}",
+    "format-wifi"         : "<span color='#50ff4a'></span> {essid} <span color='#0099ff'></span> {signalStrength}%",
+    "format-alt"          : "<span color='#50ff4a'></span> {bandwidthUpBits} <span color='#ff3399'></span> {bandwidthDownBits}",
     "format-disconnected" : "{ifname} DISCONNECTED!",
     "format-disabled"     : "{ifname} DISABLED!",
     "tooltip"             : false
   },
 
   "clock"       : {
-    "format"          : " {:%H:%M}",
+    "format"          : "<span color='#5ea8a9'></span> {:%H:%M}",
     "format-alt"      : "{:%a %b %d | %H:%M}",
     "tooltip-format"  : "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   }
