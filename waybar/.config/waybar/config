@@ -40,7 +40,8 @@
     "format-bluetooth"  : " {volume:3}%",
     "format-muted"      : " Mute",
     "scroll-step"       : 5.0,
-    "tooltip"           : false
+    "tooltip"           : false,
+    "on-click"          : "volume.sh mute"
   },
 
   "cpu"         : { "format" : " {usage:3}%",      "interval" : 5 },
