@@ -1,3 +1,4 @@
+alias ls='ls --color=auto'
 alias ll='ls -lAhNv --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
