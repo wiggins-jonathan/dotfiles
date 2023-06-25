@@ -13,7 +13,7 @@ if [[ -f /etc/os-release ]]; then
   fi
 fi
 
-# Add color to man
+# wrapper for man to add color
 man() {
     LESS_TERMCAP_mb=$'\e'"[1;31m" \
     LESS_TERMCAP_md=$'\e'"[1;31m" \
