@@ -4,7 +4,8 @@ export VISUAL=$EDITOR
 export TERM=xterm-256color  # required for ssh compatibility
 
 # PATH
-PATH=$PATH:$HOME/.go/bin
+export GOPATH=$HOME/.go
+PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/bin
 
 # Run ssh agent if not running. Key is good for 1 day.
