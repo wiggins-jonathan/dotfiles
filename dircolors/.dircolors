@@ -171,6 +171,7 @@ EXEC                  01;32     # This is for files with execute permission.
 .yuv    01;35
 .cgm    01;35
 .emf    01;35
+.webp   01;35
 # https://wiki.xiph.org/MIME_Types_and_File_Extensions
 .ogv    01;35
 .ogx    01;35
