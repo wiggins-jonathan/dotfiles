@@ -1,0 +1,24 @@
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.cursor]
+cursor = "#0099ff"
+text = "#ff3399"
+
+[colors.normal]
+black = "#242424"
+blue = "#0099ff"
+cyan = "#5ea8a9"
+green = "#50ff4a"
+magenta = "#ff3399"
+red = "#be0e50"
+white = "#ffffff"
+yellow = "#cc5fa3"
+
+[colors.primary]
+background = "#242424"
+foreground = "#ffffff"
+
+[colors.vi_mode_cursor]
+cursor = "#ff3399"
+text = "#0099ff"
