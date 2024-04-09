@@ -21,4 +21,3 @@ if [[ -n "$ZSH_VERSION" ]]; then
     command_not_found_handle "$@"
   }
 fi
-
