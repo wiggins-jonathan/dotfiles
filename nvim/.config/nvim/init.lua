@@ -82,7 +82,7 @@ vim.api.nvim_create_user_command(
 -- auto `go fmt` when exiting go files
 autocmd('BufWinLeave', { pattern = '*.go', command = '! go fmt % > /dev/null' })
 
--- fix yaml comment formatting
+-- do not indent full line when commenting in yaml file
 autocmd('filetype', { pattern = 'yaml', command = 'setlocal indentkeys-=0#' })
 
 -- statusline
