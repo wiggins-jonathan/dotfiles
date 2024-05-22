@@ -1,56 +1,47 @@
-local go  = vim.opt         -- global options
-local wo  = vim.wo          -- windows-local options
-local bo  = vim.bo          -- buffer-local options
-local map = vim.keymap.set  -- remap default keys
+local go = vim.opt  -- easily access global options
+go.ignorecase = true  -- when searching ignore case...
+go.smartcase  = true  -- unless uppercase is used
+go.undofile = true  -- use undo file at $XDG_STATE_HOME/nvim/undo
 
-vim.cmd('colorscheme theme')
+local wo = vim.wo -- easily access windows-local options
+wo.colorcolumn  = '80'
+wo.number       = true
+wo.cursorline   = true
 
-wo.colorcolumn  = '80'  -- highlight column 80
-wo.number       = true  -- show line numbers on left
-wo.cursorline   = true  -- highlight the line number cursor is currently on
+local bo = vim.bo -- easily access buffer-local options
+bo.smartindent  = true  -- dynamically adjust indent based on language
+bo.expandtab    = true  -- hitting tab inserts space characters
+bo.tabstop      = 2     -- width of tab set to 2 spaces when displayed
+bo.softtabstop  = 2     -- width of tab set to 2 spaces in editing modes
+bo.shiftwidth   = 2     -- width of tab set to 2 spaces in other modes
 
--- tabs
-bo.expandtab    = true  -- hitting tab inserts spaces instead
-bo.tabstop      = 2     -- width of TAB set to 2 spaces in insert mode
-bo.softtabstop  = 2     -- width of TAB set to 2 spaces in editing modes
-bo.shiftwidth   = 2     -- width of autoindent set to 2 spaces
-bo.smartindent  = true
+local map = vim.keymap.set  -- easily remap default keys
+map('n', '<esc>', ':noh<return><esc>') -- double esc clears search highlighting
 
--- search
-go.ignorecase  = true  -- when searching, ignore case...
-go.smartcase   = true  -- unless upper case is used
-map('n', '<esc>', ':noh<return><esc>') -- <esc> clears search highlighting
+local autocmd = vim.api.nvim_create_autocmd -- easily create autocommands
 
--- folding
-wo.foldmethod     = 'indent'  -- fold on indent...
-wo.foldlevel      = 99        -- for up to 99 indents
-go.foldlevelstart = 10        -- open all folds less than 10 on file open
-wo.foldnestmax    = 10        -- don't nest lines with fold amount > 10
-map('n', '<space>', 'za')     -- use space to unfold instead of za
+-- highlight yanked text for 5 seconds
+autocmd('TextYankPost', { pattern = '*', callback = function()
+    vim.highlight.on_yank({ timeout = 5000 })
+  end
+})
 
-go.undofile = true  -- use an undo file saved in $XDG_STATE_HOME/nvim/undo
+-- remove autocomment on newline
+autocmd('filetype', { pattern = '*', command = 'setlocal formatoptions-=cro'})
+-- do not indent when commenting in yaml
+autocmd('filetype', { pattern = 'yaml', command = 'setlocal indentkeys-=0#' })
+-- remove trailing whitespace on write to file
+autocmd('BufWritePre', { pattern = '*', command = '%s/\\s\\+$//e' })
+
+-- auto `go fmt` when exiting go files
+autocmd('BufWinLeave', { pattern = '*.go', command = '! go fmt % > /dev/null' })
 
 -- filetype detection
-vim.g.do_filetype_lua = 1
-local add = vim.filetype.add
+local add = vim.filetype.add  -- easily add filetype detection
 add({ extension  = { bean             = 'beancount' } })
 add({ extension  = { tf               = 'terraform' } })
 add({ extension  = { svelte           = 'html'      } })
 add({ pattern    = { ['[Cc]addyfile'] = 'caddyfile' } })
-
-local autocmd = vim.api.nvim_create_autocmd
-
--- highlight yanked text
-autocmd('TextYankPost', { pattern = '*', callback = function()
-  vim.highlight.on_yank({ timeout = 10000 }) -- 10 seconds
-  end
-})
-
--- Disable automatic commenting on newline
-autocmd('filetype', { pattern = '*', command = 'setlocal formatoptions-=cro' })
-
--- remove trailing whitespace on save
-autocmd('BufWritePre', { pattern = '*', command = '%s/\\s\\+$//e' })
 
 -- if line ends in {, (, [, indent & close
 autocmd('filetype', {
@@ -63,27 +54,12 @@ autocmd('filetype', {
 })
 
 -- languages where tab = 4 spaces
-autocmd('filetype', {
-  pattern   = 'python,go',
-  callback  =  function()
+autocmd('filetype', { pattern = 'python,go', callback = function()
     bo.tabstop      = 4
     bo.softtabstop  = 4
     bo.shiftwidth   = 4
   end
 })
-
--- add newline after the first space after 80 chars
-vim.api.nvim_create_user_command(
-  'Newline',
-  '%s/\\v(.{80}.{-}\\s)/\\1\\r/g',
-  {}
-)
-
--- auto `go fmt` when exiting go files
-autocmd('BufWinLeave', { pattern = '*.go', command = '! go fmt % > /dev/null' })
-
--- do not indent full line when commenting in yaml file
-autocmd('filetype', { pattern = 'yaml', command = 'setlocal indentkeys-=0#' })
 
 -- statusline
 local filename      = '%t'
