@@ -9,3 +9,7 @@
 	colorMoved = zebra
 [init]
 	defaultBranch = main
+[rebase]
+	autostash = true
+[commit]
+	verbose = true
