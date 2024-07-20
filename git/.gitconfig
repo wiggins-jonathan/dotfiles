@@ -11,5 +11,8 @@
 	defaultBranch = main
 [rebase]
 	autostash = true
+	autosquash = true
 [commit]
 	verbose = true
+[push]
+	autoSetupRemote = true
