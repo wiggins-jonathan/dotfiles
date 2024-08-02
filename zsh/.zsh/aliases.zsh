@@ -7,7 +7,7 @@ alias vi=nvim
 alias venv='source .venv/bin/activate'
 alias tf='terraform'
 alias ap='ansible-playbook'
-alias db='distrobox'
+alias dbox='/home/deck/bin/distrobox'
 
 # cd & ls together forever
 cdl() {

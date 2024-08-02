@@ -5,8 +5,9 @@ export TERM=xterm-256color  # required for ssh compatibility
 
 # PATH
 export GOPATH=$HOME/.go
-PATH=$PATH:$GOPATH/bin
-PATH=$PATH:$HOME/bin
+PATH=$GOPATH/bin:$PATH
+PATH=$HOME/.local/bin:$PATH
+PATH=$HOME/bin:$PATH
 
 # Run ssh agent if not running. Key is good for 1 day.
 # This requires `AddKeysToAgent yes` in ~/.ssh/config
