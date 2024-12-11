@@ -13,6 +13,8 @@
     age
     fd
     ripgrep
+    xclip
+    tgpt
   ];
   home.shellAliases = {
     "ll"   = "ls -lAhNv --color=auto --group-directories-first";
