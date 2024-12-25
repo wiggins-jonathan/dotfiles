@@ -15,6 +15,7 @@
     ripgrep
     xclip
     tgpt
+    android-tools
   ];
   home.shellAliases = {
     "ll"   = "ls -lAhNv --color=auto --group-directories-first";
