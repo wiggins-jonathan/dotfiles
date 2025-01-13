@@ -10,3 +10,6 @@ Fully atomic, hermetic, & modular using
     * `sudo ln -s $(realpath flake.nix) /etc/nixos/flake.nix`
 - Update nixos
     * `sudo nixos-rebuild switch`
+Or if you are using the nix package manager & not NixOS (like on a
+Steam Deck)
+    * `nix run .#homeConfigurations.deck.activationPackage`
