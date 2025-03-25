@@ -2,9 +2,9 @@
   description = "system config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05-small";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11-small";
 
-    home-manager.url = "github:nix-community/home-manager/release-24.05";
+    home-manager.url = "github:nix-community/home-manager/release-24.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
@@ -39,10 +39,9 @@
           }
         ];
       };
-
-    # Home-manager configuration for Steam Deck (no nixOS)
     };
 
+    # Home-manager configuration for Steam Deck (no nixOS)
     homeConfigurations."deck" = home-manager.lib.homeManagerConfiguration {
       inherit (nixpkgs.legacyPackages.x86_64-linux) pkgs;
 
