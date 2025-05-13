@@ -62,13 +62,4 @@
   virtualisation.docker.enable = true;
 
   system.stateVersion = "23.05"; # Do not change unless you know what you're doing
-
-  # nfs
-  fileSystems = {
-    "/mnt/media" = {
-      device = "192.168.1.104:/mnt/backup_A/media";
-      fsType = "nfs";
-      options = ["x-systemd.automount" "noauto"];
-    };
-  };
 }
