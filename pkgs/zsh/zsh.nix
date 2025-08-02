@@ -12,7 +12,7 @@
     };
     syntaxHighlighting.enable = true;
     autosuggestion.enable = true;
-    initExtra = ''
+    initContent = ''
       # cd & ls at the same time
       cdl() { builtin cd "$@" && ls -lAhNv --color=auto --group-directories-first }
 
