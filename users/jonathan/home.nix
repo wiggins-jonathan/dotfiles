@@ -21,6 +21,12 @@
       ripgrep
     ];
 
+    sessionVariables = {
+      TZ = "America/Phoenix";
+      DOMAIN = "wiggins.tech";
+    };
+
+
     sessionPath = [ "$HOME/nix/bin" ];
 
     stateVersion = "22.11"; # Do not change unless you know what you're doing
