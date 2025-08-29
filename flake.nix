@@ -24,21 +24,6 @@
           }
         ];
       };
-
-      # Configuration for 'nucbox' machine
-      nucbox = nixpkgs.lib.nixosSystem {
-        modules = [
-          ./machines/nucbox/configuration.nix
-          ./machines/nucbox/hardware-configuration.nix
-          ./users/jonathan
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.jonathan = import ./users/jonathan/home.nix;
-          }
-        ];
-      };
     };
 
     # Home-manager configuration for Steam Deck (no nixOS)
