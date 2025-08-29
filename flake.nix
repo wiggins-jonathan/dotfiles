@@ -6,11 +6,13 @@
 
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixgl.url = "github:nix-community/nixGL";
+    nixgl.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: {
+  outputs = { self, nixpkgs, home-manager, nixgl, ... }: {
     nixosConfigurations = {
-      # Configuration for 'nas' machine
       nas = nixpkgs.lib.nixosSystem {
         modules = [
           ./machines/nas/configuration.nix
@@ -28,7 +30,10 @@
 
     # Home-manager configuration for Steam Deck (no nixOS)
     homeConfigurations."deck" = home-manager.lib.homeManagerConfiguration {
-      inherit (nixpkgs.legacyPackages.x86_64-linux) pkgs;
+      pkgs = import nixpkgs {
+        system = "x86_64-linux";
+        overlays = [ nixgl.overlay ];
+      };
 
       modules = [
         ./users/deck/home.nix
@@ -36,6 +41,7 @@
         ./pkgs/git/git.nix
         ./pkgs/nvim/nvim.nix
         ./pkgs/zsh/zsh.nix
+        ./pkgs/ghostty/ghostty.nix
       ];
     };
 
