@@ -42,6 +42,7 @@
         ./pkgs/nvim
         ./pkgs/zsh
         ./pkgs/ghostty
+        ./pkgs/element-desktop
       ];
     };
 
