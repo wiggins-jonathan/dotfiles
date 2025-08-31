@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ../../pkgs/zsh/zsh.nix
-    ../../pkgs/nvim/nvim.nix
-    ../../pkgs/git/git.nix
-    ../../pkgs/dircolors/dircolors.nix
+    ../../pkgs/zsh
+    ../../pkgs/nvim
+    ../../pkgs/git
+    ../../pkgs/dircolors
   ];
 
   home = {
