@@ -37,11 +37,13 @@
 
       modules = [
         ./users/deck/home.nix
-        ./pkgs/dircolors/dircolors.nix
-        ./pkgs/git/git.nix
-        ./pkgs/nvim/nvim.nix
-        ./pkgs/zsh/zsh.nix
-        ./pkgs/ghostty/ghostty.nix
+        ./pkgs/dircolors
+        ./pkgs/git
+        ./pkgs/nvim
+        ./pkgs/zsh
+        ./pkgs/ghostty
+        ./pkgs/librewolf
+        ./pkgs/zathura
       ];
     };
 
