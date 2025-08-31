@@ -6,3 +6,8 @@ fi
 if [[ ! "$SSH_AUTH_SOCK" ]]; then
   source "$XDG_RUNTIME_DIR/ssh-agent.env" > /dev/null
 fi
+
+# set to avoid conflicts with ssh'ing to machines without ghostty
+if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
+    export TERM=xterm-256color
+fi
