@@ -28,9 +28,5 @@
     "ip"   = "ip --color=auto";
     "grep" = "grep --color=auto";
     "diff" = "diff --color=auto";
-
-    # nixgl wrappers
-    "ghostty" = "nixGLMesa ghostty";
-    "mpv"     = "nixGLMesa mpv";
   };
 }
