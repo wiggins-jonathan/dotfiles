@@ -46,6 +46,11 @@
       "diff" = "diff --color=auto";
     };
     pathsToLink = ["/share/zsh"]; # zsh completion for system packages
+
+    sessionVariables = {
+      TZ = "America/Phoenix";
+      DOMAIN = "wiggins.tech";
+    };
   };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
