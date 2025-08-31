@@ -42,8 +42,6 @@
         ./pkgs/nvim
         ./pkgs/zsh
         ./pkgs/ghostty
-        ./pkgs/librewolf
-        ./pkgs/zathura
       ];
     };
 

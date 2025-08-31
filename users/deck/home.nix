@@ -21,6 +21,8 @@
     # the following requires nixgl
     nixgl.nixGLMesa
     mpv
+    zathura
+    imv
   ];
 
   home.shellAliases = {
