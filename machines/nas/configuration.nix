@@ -37,6 +37,7 @@
         git
         tree
         home-manager
+        bluez
     ];
     shells = with pkgs; [bash zsh];
     shellAliases = {
