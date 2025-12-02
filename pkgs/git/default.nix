@@ -2,9 +2,9 @@
   programs = {
     git = {
       enable = true;
-      userName = "Jonathan Wiggins";
-      userEmail = "jonathan@wiggins.tech";
-      extraConfig = {
+      settings = {
+        user.email = "jonathan@wiggins.tech";
+        user.name = "Jonathan Wiggins";
         pull.rebase = true;
         fetch.prune = true;
         diff.colorMoved = "zebra";

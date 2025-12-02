@@ -1,14 +1,16 @@
+{ config, ... }:
+
 {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
     enableVteIntegration = true;  # track current working dir
-    dotDir = ".config/zsh";
+    dotDir = "${config.xdg.configHome}/zsh";
     history = {
       extended = true;    # add timestamp to history file
       ignoreDups = true;
       ignoreSpace = true;
-      path = "$HOME/.config/zsh/zhistory";
+      path = "${config.xdg.configHome}/zsh/zhistory";
     };
     syntaxHighlighting.enable = true;
     autosuggestion.enable = true;
