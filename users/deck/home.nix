@@ -30,5 +30,6 @@
     "ip"   = "ip --color=auto";
     "grep" = "grep --color=auto";
     "diff" = "diff --color=auto";
+    "nd" = ''nix develop -c "$SHELL"'';
   };
 }
