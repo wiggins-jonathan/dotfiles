@@ -6,7 +6,7 @@
       enable = true;
       defaultEditor = true;
       viAlias = true;
-      extraLuaConfig = "
+      initLua = "
         ${builtins.readFile ./init.lua}
         ${builtins.readFile colors/theme.lua}
       ";
