@@ -25,5 +25,5 @@ precmd() {
 
 setopt PROMPT_SUBST # Set parameter expansion, command substitution, & arithmetic expansion in prompt
 
-PROMPT="%B┌──[%F{magenta}${username}%f@%F{green}${hostname}%f] [%F{blue}${pwd}%f] ${git}${newline}\
+PROMPT="%B┌──[%F{magenta}${username}%f@%F{green}${hostname}%f] [%F{blue}${pwd}%f] ${git}${IN_NIX_SHELL:+[nix]}${newline}\
 └─%F{blue}$%f%b "
