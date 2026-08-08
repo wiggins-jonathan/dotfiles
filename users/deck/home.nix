@@ -23,6 +23,7 @@
     mpv
     zathura
     imv
+    chromium
   ];
 
   home.shellAliases = {
